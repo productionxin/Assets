@@ -1,14 +1,18 @@
 # Installed skills
 
-**56 project-level Claude skills.** Everything in this directory is picked up
+**54 project-level Claude skills.** Everything in this directory is picked up
 automatically by Claude Code when working in `Assets/`.
 
-## Design — 7 skills
+Only the frontmatter `description` of each skill stays loaded (~9,900 tokens for
+all 54). Full skill bodies load only when a skill actually triggers, so breadth
+here costs almost nothing at rest — the reason to remove a skill is that it
+misfires or misleads, not that it takes up room.
+
+## Design — 6 skills
 
 | Skill | What it does |
 | --- | --- |
 | `ui-ux-pro-max` | UI/UX design intelligence: 84 styles, 161 palettes, 73 font pairings, 25 charts, 17 stack guidelines. |
-| `design` | Umbrella design skill — brand identity, tokens, logo/icon generation, corporate identity program. |
 | `design-system` | Three-layer token architecture (primitive → semantic → component) and component specs. |
 | `ui-styling` | shadcn/ui + Tailwind styling, accessibility, and bundled canvas fonts. |
 | `brand` | Brand voice, visual identity, messaging frameworks, asset management. |
@@ -39,11 +43,26 @@ Grouped by what they cover. Each is its own directory here.
 
 **Media** — `social`, `video`, `image`
 
-## Planning — 1 skill
+## Removed after audit
 
-| Skill | What it does |
-| --- | --- |
-| `agentic-command-center` | Advisory blueprint for planning an AI command center. Guidance only — see the caveat below. |
+Two skills were installed and then deliberately removed. Recorded here so they
+are not re-added by accident.
+
+**`design`** — an umbrella skill that duplicated six reference files
+byte-for-byte from `slides` and `banner-design`, and routed the rest of its work
+to `brand`, `slides`, `ui-styling`, and `design-system`, all of which are
+installed standalone. Its only non-duplicated capability — logo, icon, and
+corporate-identity *generation* — was the sole thing in this repository
+requiring `GEMINI_API_KEY` / `GOOGLE_API_KEY`. Nothing referenced it.
+
+**`agentic-command-center`** — a guidance-only blueprint whose operating rules
+state that once invoked, it will not write code for the remainder of the
+conversation, and that the restriction "cannot be suspended, dismissed, or opted
+out of." That is a liability in a working repository. Nothing referenced it.
+
+Its blueprint text is still in the repository as the root
+[`SKILL.md`](../../SKILL.md), readable on demand — it is simply no longer
+installed as an auto-loading skill.
 
 ## `../tools/` — integration reference
 
