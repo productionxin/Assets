@@ -5,7 +5,7 @@
     "url": "https://github.com/productionxin"
   },
   "metadata": {
-    "description": "One-man-army skill set: 86 skills across brand, marketing, design, and build/test.",
+    "description": "One-man-army skill set: 87 skills across brand, marketing, design, and build/test.",
     "version": "1.0.0",
     "repository": "https://github.com/productionxin/Assets"
   },
@@ -16,7 +16,7 @@
       "source": "./",
       "version": "1.0.0",
       "strict": false,
-      "description": "All 86 skills: 27 brand, 48 marketing, 6 design, 5 research and build/test — plus the shared integration reference at .claude/tools/. Install this for a general-purpose setup; install a focused plugin instead when a project only needs one area.",
+      "description": "All 87 skills: 27 brand, 49 marketing, 6 design, 5 research and build/test — plus the shared integration reference at .claude/tools/. Install this for a general-purpose setup; install a focused plugin instead when a project only needs one area.",
       "skills": [
         "./.claude/skills/ab-testing",
         "./.claude/skills/ad-creative",
@@ -73,6 +73,7 @@
         "./.claude/skills/marketing-loops",
         "./.claude/skills/marketing-plan",
         "./.claude/skills/marketing-psychology",
+        "./.claude/skills/marketing-research",
         "./.claude/skills/meta-ads",
         "./.claude/skills/offers",
         "./.claude/skills/onboarding",
@@ -149,7 +150,7 @@
       "source": "./",
       "version": "1.0.0",
       "strict": false,
-      "description": "48 marketing skills: SEO, ads, copywriting, email, CRO, pricing, positioning, analytics, social, PR, lifecycle and competitor research. Includes the .claude/tools/ integration reference.",
+      "description": "49 marketing skills: SEO, ads, copywriting, email, CRO, pricing, positioning, analytics, social, PR, lifecycle, competitor and market research. Includes the .claude/tools/ integration reference.",
       "skills": [
         "./.claude/skills/ab-testing",
         "./.claude/skills/ad-creative",
@@ -180,6 +181,7 @@
         "./.claude/skills/marketing-loops",
         "./.claude/skills/marketing-plan",
         "./.claude/skills/marketing-psychology",
+        "./.claude/skills/marketing-research",
         "./.claude/skills/offers",
         "./.claude/skills/onboarding",
         "./.claude/skills/paywalls",
@@ -231,6 +233,15 @@
         "./.claude/skills/twitter-algorithm-optimizer",
         "./.claude/skills/webapp-testing"
       ]
+    },
+    {
+      "name": "digital-marketing-pro",
+      "displayName": "Digital Marketing Pro (external)",
+      "source": {
+        "source": "github",
+        "repo": "indranilbanerjee/digital-marketing-pro"
+      },
+      "description": "158 agency-operations marketing skills by Indranil Banerjee (MIT), installed from upstream rather than vendored here. Adds client/agency ops, CRM sync, localisation and reputation work. Heavy overlap with the marketing plugin — install one or the other per project, not both. Requires its own brand-setup to create ~/.claude-marketing/ state."
     }
   ]
 }
