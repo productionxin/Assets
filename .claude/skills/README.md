@@ -110,6 +110,28 @@ by an explicit decision — see [Unlicensed skills](#unlicensed-skills) below.)*
 **~19 off-scope skills** — resume generators, raffle pickers, GIF creators,
 invoice and file organisers, and similar. Useful, but not this toolkit's job.
 
+**All 4 skills from
+[Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)**
+— rejected on licensing first. That repository is **CC BY-NC 4.0**, which
+prohibits commercial use, and these skills are meant to be usable on client work.
+Every other pack here is MIT or Apache-2.0. Note this differs from the unlicensed
+skills above: those have unclear rights, this one carries an explicit
+restriction.
+
+Scope was the second reason. `academic-paper`, `academic-paper-reviewer` and
+`academic-pipeline` are academic paper production — LaTeX, citation formats,
+simulated peer review, rebuttals. `deep-research` looked like a fit for market and
+competitor work, but is academically shaped in practice (PRISMA appears 15 times,
+thesis 21, meta-analysis 10), is not standalone — it references
+`academic-pipeline/` and `academic-paper/` in three places — and is built around
+a 14-agent pipeline. Commercial research is already covered at the right altitude
+by `customer-research`, `competitor-profiling`, `competitors` and
+`content-strategy`.
+
+The repository itself is sound: all four pass `skills-ref validate`, with no name
+collisions and no missing dependencies. It is simply built for a different job
+under a licence that rules this one out.
+
 **2 duplicates from the brand repo** — its `aso` (249 lines, 1 file) lost to the
 installed one (312 lines, 7 files); its `influencer-marketing` was longer but the
 installed version is wired into the marketing pack's cross-references, so
