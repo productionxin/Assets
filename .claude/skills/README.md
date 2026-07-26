@@ -1,10 +1,10 @@
 # Installed skills
 
-**87 project-level Claude skills.** Everything in this directory is picked up
+**99 project-level Claude skills.** Everything in this directory is picked up
 automatically by Claude Code when working in `Assets/`.
 
-Only the frontmatter `description` of each skill stays loaded (~15,800 tokens for
-all 87). Full skill bodies load only when a skill actually triggers, so breadth
+Only the frontmatter `description` of each skill stays loaded (~17,500 tokens for
+all 99). Full skill bodies load only when a skill actually triggers, so breadth
 here costs almost nothing at rest — the reason to remove a skill is that it
 misfires or misleads, not that it takes up room.
 
@@ -18,9 +18,9 @@ exposes these same skills to *any* project:
 /plugin install one-man-army@productionx-skills
 ```
 
-Six plugins are declared. Five are local — `one-man-army` (all 87) plus `brand`
-(27), `marketing` (49), `design` (6) and `toolkit` (5), for projects that need one
-area rather than everything. Each uses `source: "./"` with an explicit `skills`
+Seven plugins are declared. Six are local — `one-man-army` (all 99) plus `brand`
+(27), `marketing` (51), `design` (6), `backend` (10) and `toolkit` (5), for
+projects that need one area rather than everything. Each uses `source: "./"` with an explicit `skills`
 array and `strict: false`, so the marketplace entry is the complete definition and
 no `plugin.json` is needed.
 
@@ -32,7 +32,7 @@ Because `source` is the repository root, `../tools/` ships with every plugin and
 the marketing skills' 96 integration links keep resolving in the installed copy.
 
 **Regenerate the manifest whenever skills are added or removed** — the `skills`
-arrays list all 87 paths explicitly, and a stale entry pointing at a deleted
+arrays list all 99 paths explicitly, and a stale entry pointing at a deleted
 directory is the likely failure mode.
 
 ## External plugins
@@ -100,7 +100,22 @@ Strategy-layer brand work, one skill per discipline.
 | `slides` | Strategic HTML presentations with Chart.js and design tokens. |
 | `banner-design` | Banners for social, ads, web heroes, and print. |
 
-## Marketing — 49 skills
+## Backend and infrastructure — 10 skills
+
+| Skill | What it does |
+| --- | --- |
+| `backend-patterns` | Backend architecture, API design, database optimisation for Node/Express/Next API routes. |
+| `api-design` | REST design: resource naming, status codes, pagination, filtering, errors, versioning, rate limiting. |
+| `fastapi-patterns` | FastAPI structure, Pydantic v2, dependency injection, async handlers, auth, testing. |
+| `postgres-patterns` | Query optimisation, schema design, indexing, security. |
+| `redis-patterns` | Caching, distributed locks, rate limiting, pub/sub, connection management. |
+| `database-migrations` | Schema and data migrations, rollbacks, zero-downtime, across Prisma/Drizzle/Django/TypeORM. |
+| `database-sync` | Replication, migration and cross-platform data integration. |
+| `docker-patterns` | Compose, container security, networking, volumes, multi-service orchestration. |
+| `deployment-patterns` | CI/CD, containerisation, health checks, rollback, production readiness. |
+| `devops-automation` | CI/CD, monitoring, incident management, infrastructure workflows. |
+
+## Marketing — 51 skills
 
 Grouped by what they cover. Each is its own directory here.
 
@@ -123,6 +138,9 @@ Grouped by what they cover. Each is its own directory here.
 **Revenue & analytics** — `analytics`, `revops`, `sales-enablement`
 
 **Media** — `social`, `video`, `image`
+
+**Revenue ops** — `crm-automation` (multi-CRM: HubSpot, Salesforce, Pipedrive),
+`customer-success` (health scoring, QBRs, expansion, retention)
 
 **Research** — `marketing-research` (market awareness and sophistication stages,
 avatar profiling, unique mechanism, value proposition)
@@ -216,6 +234,8 @@ history at commit `318d3cb`.
 | The 7 design skills | `ui-ux-pro-max-skill-main.zip` — upstream plugin `ui-ux-pro-max-skill` v2.6.2 (owner: nextlevelbuilder) |
 | The 48 marketing skills, and `../tools/` | `marketingskills-main.zip` — upstream `marketingskills` (Corey Haines) |
 | The 27 brand skills | [arnabbagxd/Brand-building-skills](https://github.com/arnabbagxd/Brand-building-skills) v1.2.0 (Arnab Bag) |
+| The 8 backend skills | [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) — MIT |
+| `crm-automation`, `customer-success`, `database-sync`, `devops-automation` | [claude-office-skills/skills](https://github.com/claude-office-skills/skills) — MIT |
 | `marketing-research` | [ishwarjha/claude-marketing-research-skill](https://github.com/ishwarjha/claude-marketing-research-skill) — Apache-2.0 |
 | `webapp-testing`, `theme-factory` | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) — Apache-2.0 |
 | `competitive-ads-extractor`, `domain-name-brainstormer`, `twitter-algorithm-optimizer` | same repo — **no licence**, see below |
@@ -292,11 +312,21 @@ them compile clean under Python 3.
 
 ## Validation
 
-All 48 marketing skills pass Anthropic's official `skills-ref validate`.
+90 of 99 skills pass Anthropic's official `skills-ref validate`. The 9 that do
+not all fail for the same harmless reason — extra frontmatter keys that Claude
+Code accepts but the stricter published spec does not list:
 
-The 7 design skills do not, but only because they declare `argument-hint` in
-frontmatter — a key Claude Code supports and the stricter published spec does
-not. They load and run correctly; no change was made on account of this.
+- `argument-hint` on 5 design skills.
+- `author`, `category`, `tags`, `version` and similar on `crm-automation`,
+  `customer-success`, `devops-automation` and `database-sync`.
+
+All nine load and run correctly, so they were left as upstream shipped them.
+
+One genuine violation *was* fixed: `database-sync` declared
+`name: Database Sync` — spaces and capitals, not matching its directory. That
+breaks the documented rule that a skill name is letters, digits and hyphens
+matching the folder, so it was corrected to `database-sync`. Nothing else in any
+upstream file was modified.
 
 ## Caveats
 
