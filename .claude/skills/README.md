@@ -1,7 +1,7 @@
 # Installed skills
 
 **99 project-level Claude skills.** Everything in this directory is picked up
-automatically by Claude Code when working in `skills/`.
+automatically by Claude Code when working in `Assets/`.
 
 Only the frontmatter `description` of each skill stays loaded. Measured across
 all 99: **~13,600 tokens, averaging ~136 per skill.** The bodies come to
@@ -17,7 +17,7 @@ misfires or misleads, not that it takes up room.
 exposes these same skills to *any* project:
 
 ```
-/plugin marketplace add productionxin/skills
+/plugin marketplace add productionxin/Assets
 /plugin install one-man-army@productionx-skills
 ```
 
@@ -85,12 +85,10 @@ Strategy-layer brand work, one skill per discipline.
 **Segment playbooks** — `b2b-brand-marketing`, `d2c-marketing`, `personal-brand`,
 `ugc-strategy`, `whatsapp-marketing`, `email-marketing`, `google-ads`, `meta-ads`
 
-> Note the deliberate overlap: `brand-voice`, `brand-messaging`,
-> `brand-guidelines` and `brand-identity` cover ground the design-pack `brand`
-> skill also touches. They sit at different altitudes — these are strategy, while
-> `brand` holds the execution assets (logo usage rules, type specs, palette
-> management, asset organisation, approval checklists). Worth watching for
-> trigger competition; prune if the wrong one starts firing.
+> These sit at a different altitude from the design-pack `brand` skill: these
+> **define** a brand, `brand` **applies** one (logo usage rules, type specs,
+> palette management, asset organisation, approval checklists). Both descriptions
+> now point at each other, so routing is automatic — no pruning needed.
 
 ## Design — 6 skills
 
@@ -99,7 +97,7 @@ Strategy-layer brand work, one skill per discipline.
 | `ui-ux-pro-max` | UI/UX design intelligence: 84 styles, 161 palettes, 73 font pairings, 25 charts, 17 stack guidelines. |
 | `design-system` | Three-layer token architecture (primitive → semantic → component) and component specs. |
 | `ui-styling` | shadcn/ui + Tailwind styling, accessibility, and bundled canvas fonts. |
-| `brand` | Brand voice, visual identity, messaging frameworks, asset management. |
+| `brand` | Brand execution: logo usage rules, type specs, palette management, asset organisation, approval checklists. |
 | `slides` | Strategic HTML presentations with Chart.js and design tokens. |
 | `banner-design` | Banners for social, ads, web heroes, and print. |
 
