@@ -3,9 +3,12 @@
 **99 project-level Claude skills.** Everything in this directory is picked up
 automatically by Claude Code when working in `Assets/`.
 
-Only the frontmatter `description` of each skill stays loaded (~17,500 tokens for
-all 99). Full skill bodies load only when a skill actually triggers, so breadth
-here costs almost nothing at rest — the reason to remove a skill is that it
+Only the frontmatter `description` of each skill stays loaded. Measured across
+all 99: **~13,600 tokens, averaging ~136 per skill.** The bodies come to
+~249,000 tokens in total but load only when a skill actually triggers, one at a
+time — median body ~2,200 tokens, heaviest (`ui-ux-pro-max`) ~11,700.
+
+So breadth costs little at rest, and the reason to remove a skill is that it
 misfires or misleads, not that it takes up room.
 
 ## Also published as a plugin marketplace

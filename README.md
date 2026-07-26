@@ -56,7 +56,7 @@ That's it. The skills are then available in every project on that machine, and `
 
 #### Install only what a project needs
 
-`one-man-army` loads all 99 skills, which is ~17,500 tokens of descriptions in every session. On a project that only needs one area, install a focused plugin instead:
+`one-man-army` loads all 99 skills — measured at ~13,600 tokens of descriptions per session (~136 per skill). On a project that only needs one area, install a focused plugin instead:
 
 | Command | Skills |
 | --- | --- |
