@@ -16,13 +16,29 @@ picked up automatically by Claude Code when working in `Assets/`.
 
 ## Provenance
 
-All files are copied **verbatim** from the two zips committed at the repository
-root — no edits were made to upstream content. The `ui-ux-pro-max-skill-main.zip`
-archive also ships duplicate copies of these same skills under `cli/assets/skills/`
-and `src/` (its CLI distribution payload); only the canonical `.claude/skills/`
-set was installed here, to avoid committing the same trees three times.
+All files were copied **verbatim** from two source zips — no edits were made to
+upstream content. Those zips have since been removed from the repository root
+now that their contents are extracted here; they remain recoverable from git
+history at commit `318d3cb` if ever needed.
 
-Upstream plugin version: `ui-ux-pro-max-skill` 2.6.2 (owner: nextlevelbuilder).
+| Skill | Source archive |
+| --- | --- |
+| The seven design skills | `ui-ux-pro-max-skill-main.zip` — upstream plugin `ui-ux-pro-max-skill` v2.6.2 (owner: nextlevelbuilder) |
+| `agentic-command-center` | `agentic-command-center-main.zip` |
+
+The ui-ux archive also shipped duplicate copies of the same seven skills under
+`cli/assets/skills/` and `src/` (its CLI distribution payload); only the
+canonical `.claude/skills/` set was installed, to avoid committing the same
+trees three times. The archive's other material — its CLI tool, docs, example
+projects, and screenshots — was not carried over, and is available upstream at
+https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.
+
+## Licensing
+
+The seven design skills are MIT-licensed; the upstream notice is preserved
+alongside them in [`LICENSE-ui-ux-pro-max.txt`](LICENSE-ui-ux-pro-max.txt).
+Bundled fonts under `ui-styling/canvas-fonts/` carry their own SIL Open Font
+License files (`*-OFL.txt`), which are retained next to each font.
 
 ## Dependencies
 
