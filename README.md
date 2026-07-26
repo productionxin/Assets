@@ -27,13 +27,12 @@
 
 ## 📦 Installing the skills
 
-This repo ships **56 Claude skills** in [`.claude/skills/`](.claude/skills/). They are already installed at **project level**, so they load automatically in any Claude Code session working inside this repository — no setup needed.
+This repo ships **54 Claude skills** in [`.claude/skills/`](.claude/skills/). They are already installed at **project level**, so they load automatically in any Claude Code session working inside this repository — no setup needed.
 
 | Group | Count | Covers |
 | --- | --- | --- |
 | **Marketing** | 48 | SEO, ads, copywriting, email, CRO, pricing, positioning, analytics, social, PR, lifecycle, competitor research |
-| **Design** | 7 | [`ui-ux-pro-max`](.claude/skills/ui-ux-pro-max/), [`ui-styling`](.claude/skills/ui-styling/), [`design`](.claude/skills/design/), [`design-system`](.claude/skills/design-system/), [`brand`](.claude/skills/brand/), [`slides`](.claude/skills/slides/), [`banner-design`](.claude/skills/banner-design/) |
-| **Planning** | 1 | [`agentic-command-center`](.claude/skills/agentic-command-center/) — the advisory blueprint described below |
+| **Design** | 6 | [`ui-ux-pro-max`](.claude/skills/ui-ux-pro-max/), [`ui-styling`](.claude/skills/ui-styling/), [`design-system`](.claude/skills/design-system/), [`brand`](.claude/skills/brand/), [`slides`](.claude/skills/slides/), [`banner-design`](.claude/skills/banner-design/) |
 
 👉 **[Full catalogue, grouped by topic →](.claude/skills/README.md)**
 
@@ -54,7 +53,7 @@ Three things to know about this route:
 
 - It is **per-machine and not version-controlled** — re-run it on each machine you work from, and again whenever this repo updates.
 - Copy `tools/` too, or 96 integration links inside the marketing skills will break. The skills reference it as `../../tools/`, so it belongs beside `skills/`, not inside it.
-- It also makes `agentic-command-center` loadable everywhere. That skill refuses to write code for the remainder of any conversation it is invoked in, so you may prefer to leave that one project-scoped and copy the rest.
+- Two skills were audited out and are deliberately not installed — `design` (duplicated `slides` and `banner-design`, and needed a Gemini API key) and `agentic-command-center` (declines to write code for the rest of any conversation it enters). See [the audit notes](.claude/skills/README.md#removed-after-audit).
 
 There are no dependencies to install — the marketing skills are pure markdown, and the design skills' Python scripts use the standard library only.
 
@@ -74,9 +73,10 @@ The skill this repo was originally built around is **agentic-command-center** �
 There are two ways, depending on how you work.
 
 **A. If you use Claude Code**
-1. Already installed in this repo. To use it elsewhere, copy the skill into your home skills directory:
+1. This one is **not** installed as an auto-loading skill here — it declines to write code for the rest of any conversation it enters, which does not mix with a working repo. To use it deliberately, copy the root [`SKILL.md`](SKILL.md) into your home skills directory:
    ```bash
-   cp -r .claude/skills/agentic-command-center ~/.claude/skills/
+   mkdir -p ~/.claude/skills/agentic-command-center
+   cp SKILL.md ~/.claude/skills/agentic-command-center/
    ```
 2. Start Claude Code and run:
    ```
