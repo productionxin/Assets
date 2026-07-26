@@ -58,15 +58,20 @@ That's it. The skills are then available in every project on that machine, and `
 
 `one-man-army` loads all 99 skills — measured at ~13,600 tokens of descriptions per session (~136 per skill). On a project that only needs one area, install a focused plugin instead:
 
-| Command | Skills |
-| --- | --- |
-| `/plugin install brand@productionx-skills` | 27 — strategy, naming, identity, voice, messaging, audit, launch |
-| `/plugin install marketing@productionx-skills` | 51 — SEO, ads, copy, email, CRO, pricing, analytics, PR, market research, CRM |
-| `/plugin install backend@productionx-skills` | 10 — API design, Postgres, Redis, migrations, Docker, deploy, DevOps |
-| `/plugin install design@productionx-skills` | 6 — UI/UX intelligence, Tailwind/shadcn, tokens, slides, banners |
-| `/plugin install toolkit@productionx-skills` | 5 — Playwright testing, theming, ad extraction, domain and tweet tools |
+| Work you're doing | Install | Skills | Always-on cost | Saving |
+| --- | --- | --- | --- | --- |
+| Backend, API, infra | `backend@productionx-skills` | 10 | ~370 | **98%** |
+| Utilities only | `toolkit@productionx-skills` | 5 | ~265 | **99%** |
+| Design, UI | `design@productionx-skills` | 6 | ~620 | **96%** |
+| Brand identity | `brand@productionx-skills` | 27 | ~3,750 | **73%** |
+| Growth, campaigns | `marketing@productionx-skills` | 51 | ~8,500 | **38%** |
+| Mixed or unknown | `one-man-army@productionx-skills` | 99 | ~13,500 | — |
 
-They can be combined: `brand` + `design` on a branding job, `marketing` alone on a growth engagement.
+Costs are measured, not estimated. Combining two narrow plugins still beats installing everything: `brand` + `design` is ~4,370 tokens against ~13,500.
+
+Depth inside a plugin is identical to `one-man-army` — you lose reach, never quality.
+
+**The bigger lever is MCP servers.** Connected servers expose several hundred tools, which dwarfs the entire skill budget. Disconnecting ones a project doesn't use saves more than any skill pruning.
 
 #### One external plugin
 
