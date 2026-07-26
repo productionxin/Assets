@@ -1,29 +1,70 @@
 # Installed skills
 
-Project-level Claude skills for this repository. Anything in this directory is
-picked up automatically by Claude Code when working in `Assets/`.
+**56 project-level Claude skills.** Everything in this directory is picked up
+automatically by Claude Code when working in `Assets/`.
 
-| Skill | Source | What it does |
-| --- | --- | --- |
-| `agentic-command-center` | `agentic-command-center-main.zip` | Advisory blueprint for planning an AI command center. Guidance only — see the caveat below. |
-| `ui-ux-pro-max` | `ui-ux-pro-max-skill-main.zip` | UI/UX design intelligence: 84 styles, 161 palettes, 73 font pairings, 25 charts, 17 stack guidelines. |
-| `design` | `ui-ux-pro-max-skill-main.zip` | Umbrella design skill — brand identity, tokens, logo/icon generation, corporate identity program. |
-| `design-system` | `ui-ux-pro-max-skill-main.zip` | Three-layer token architecture (primitive → semantic → component) and component specs. |
-| `ui-styling` | `ui-ux-pro-max-skill-main.zip` | shadcn/ui + Tailwind styling, accessibility, and bundled canvas fonts. |
-| `brand` | `ui-ux-pro-max-skill-main.zip` | Brand voice, visual identity, messaging frameworks, asset management. |
-| `slides` | `ui-ux-pro-max-skill-main.zip` | Strategic HTML presentations with Chart.js and design tokens. |
-| `banner-design` | `ui-ux-pro-max-skill-main.zip` | Banners for social, ads, web heroes, and print. |
+## Design — 7 skills
+
+| Skill | What it does |
+| --- | --- |
+| `ui-ux-pro-max` | UI/UX design intelligence: 84 styles, 161 palettes, 73 font pairings, 25 charts, 17 stack guidelines. |
+| `design` | Umbrella design skill — brand identity, tokens, logo/icon generation, corporate identity program. |
+| `design-system` | Three-layer token architecture (primitive → semantic → component) and component specs. |
+| `ui-styling` | shadcn/ui + Tailwind styling, accessibility, and bundled canvas fonts. |
+| `brand` | Brand voice, visual identity, messaging frameworks, asset management. |
+| `slides` | Strategic HTML presentations with Chart.js and design tokens. |
+| `banner-design` | Banners for social, ads, web heroes, and print. |
+
+## Marketing — 48 skills
+
+Grouped by what they cover. Each is its own directory here.
+
+**Acquisition & demand** — `ads`, `ad-creative`, `aso`, `cold-email`,
+`directory-submissions`, `launch`, `lead-magnets`, `prospecting`,
+`public-relations`, `co-marketing`, `influencer-marketing`, `community-marketing`
+
+**SEO & content** — `ai-seo`, `seo-audit`, `programmatic-seo`, `schema`,
+`site-architecture`, `content-strategy`, `copywriting`, `copy-editing`,
+`free-tools`
+
+**Conversion & lifecycle** — `cro`, `ab-testing`, `signup`, `onboarding`,
+`paywalls`, `popups`, `emails`, `sms`, `churn-prevention`, `referrals`,
+`marketing-loops`
+
+**Strategy & positioning** — `marketing-plan`, `marketing-ideas`,
+`marketing-council`, `marketing-psychology`, `product-marketing`, `offers`,
+`pricing`, `competitors`, `competitor-profiling`, `customer-research`
+
+**Revenue & analytics** — `analytics`, `revops`, `sales-enablement`
+
+**Media** — `social`, `video`, `image`
+
+## Planning — 1 skill
+
+| Skill | What it does |
+| --- | --- |
+| `agentic-command-center` | Advisory blueprint for planning an AI command center. Guidance only — see the caveat below. |
+
+## `../tools/` — integration reference
+
+The marketing skills link to a shared reference library at
+[`.claude/tools/`](../tools/): a [`REGISTRY.md`](../tools/REGISTRY.md) index plus
+161 files covering specific integrations (Google Ads, GA4, Segment, Customer.io,
+Apollo, Clay, and so on) and CLI notes. It is not a skill and is never loaded on
+its own — the skills reference it by relative path, so it must stay at
+`.claude/tools/` for those 96 links to resolve.
 
 ## Provenance
 
-All files were copied **verbatim** from two source zips — no edits were made to
-upstream content. Those zips have since been removed from the repository root
-now that their contents are extracted here; they remain recoverable from git
-history at commit `318d3cb` if ever needed.
+All files were copied **verbatim** from three source zips — no edits were made to
+upstream content. The zips themselves are not kept in the repository now that
+their contents are extracted here; the first two remain recoverable from git
+history at commit `318d3cb`.
 
 | Skill | Source archive |
 | --- | --- |
-| The seven design skills | `ui-ux-pro-max-skill-main.zip` — upstream plugin `ui-ux-pro-max-skill` v2.6.2 (owner: nextlevelbuilder) |
+| The 7 design skills | `ui-ux-pro-max-skill-main.zip` — upstream plugin `ui-ux-pro-max-skill` v2.6.2 (owner: nextlevelbuilder) |
+| The 48 marketing skills, and `../tools/` | `marketingskills-main.zip` — upstream `marketingskills` (Corey Haines) |
 | `agentic-command-center` | `agentic-command-center-main.zip` |
 
 The ui-ux archive also shipped duplicate copies of the same seven skills under
@@ -33,17 +74,33 @@ trees three times. The archive's other material — its CLI tool, docs, example
 projects, and screenshots — was not carried over, and is available upstream at
 https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.
 
+From the marketing archive, `skills/` and `tools/` were installed. Its
+repository scaffolding — `AGENTS.md`, `CONTRIBUTING.md`, `VERSIONS.md`, and two
+validator shell scripts — was not carried over.
+
 ## Licensing
 
-The seven design skills are MIT-licensed; the upstream notice is preserved
-alongside them in [`LICENSE-ui-ux-pro-max.txt`](LICENSE-ui-ux-pro-max.txt).
+Both upstream packages are MIT-licensed, and their notices are preserved here:
+
+- [`LICENSE-ui-ux-pro-max.txt`](LICENSE-ui-ux-pro-max.txt) — © 2024 Next Level Builder
+- [`LICENSE-marketing-skills.txt`](LICENSE-marketing-skills.txt) — © 2025 Corey Haines
+
 Bundled fonts under `ui-styling/canvas-fonts/` carry their own SIL Open Font
-License files (`*-OFL.txt`), which are retained next to each font.
+License files (`*-OFL.txt`), retained next to each font.
 
 ## Dependencies
 
-The bundled Python scripts use the standard library only — no `pip install` step.
-All of them compile clean under Python 3.
+None. The marketing skills are pure markdown. The design skills bundle Python
+scripts that use the standard library only — no `pip install` step, and all of
+them compile clean under Python 3.
+
+## Validation
+
+All 48 marketing skills pass Anthropic's official `skills-ref validate`.
+
+The 7 design skills do not, but only because they declare `argument-hint` in
+frontmatter — a key Claude Code supports and the stricter published spec does
+not. They load and run correctly; no change was made on account of this.
 
 ## Caveats
 
