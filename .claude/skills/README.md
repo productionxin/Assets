@@ -1,12 +1,36 @@
 # Installed skills
 
-**54 project-level Claude skills.** Everything in this directory is picked up
+**83 project-level Claude skills.** Everything in this directory is picked up
 automatically by Claude Code when working in `Assets/`.
 
-Only the frontmatter `description` of each skill stays loaded (~9,900 tokens for
-all 54). Full skill bodies load only when a skill actually triggers, so breadth
+Only the frontmatter `description` of each skill stays loaded (~15,000 tokens for
+all 83). Full skill bodies load only when a skill actually triggers, so breadth
 here costs almost nothing at rest — the reason to remove a skill is that it
 misfires or misleads, not that it takes up room.
+
+## Brand — 27 skills
+
+Strategy-layer brand work, one skill per discipline.
+
+**Foundations** — `brand-strategy`, `brand-architecture`, `brand-positioning`,
+`brand-context`, `target-audience`
+
+**Identity & expression** — `brand-identity`, `brand-voice`, `brand-messaging`,
+`brand-story`, `brand-manifesto`, `brand-naming`, `brand-guidelines`,
+`brand-packaging`
+
+**Operating on a brand** — `brand-audit`, `brand-measurement`, `brand-launch`,
+`rebranding`, `competitor-branding`, `brand-partnerships`
+
+**Segment playbooks** — `b2b-brand-marketing`, `d2c-marketing`, `personal-brand`,
+`ugc-strategy`, `whatsapp-marketing`, `email-marketing`, `google-ads`, `meta-ads`
+
+> Note the deliberate overlap: `brand-voice`, `brand-messaging`,
+> `brand-guidelines` and `brand-identity` cover ground the design-pack `brand`
+> skill also touches. They sit at different altitudes — these are strategy, while
+> `brand` holds the execution assets (logo usage rules, type specs, palette
+> management, asset organisation, approval checklists). Worth watching for
+> trigger competition; prune if the wrong one starts firing.
 
 ## Design — 6 skills
 
@@ -42,6 +66,36 @@ Grouped by what they cover. Each is its own directory here.
 **Revenue & analytics** — `analytics`, `revops`, `sales-enablement`
 
 **Media** — `social`, `video`, `image`
+
+## Rejected from source repos
+
+Recorded so the same material is not re-evaluated from scratch later.
+
+**832 `composio-skills`** from `awesome-claude-skills` — every one requires the
+Rube MCP server (`requires: mcp: [rube]`), which is not connected. Without it
+they cannot do anything, and 832 extra descriptions would flood skill selection
+for zero capability. Same disqualifier that removed `design`: needs
+infrastructure that is not present.
+
+**8 skills duplicating Claude's built-ins** — `canvas-design`, `docx`, `pdf`,
+`pptx`, `xlsx`, `mcp-builder`, `skill-creator`, `artifacts-builder` all ship
+natively in the environment already.
+
+**3 unlicensed skills** — `competitive-ads-extractor`,
+`domain-name-brainstormer` and `twitter-algorithm-optimizer` were wanted on
+merit, but `awesome-claude-skills` has **no top-level LICENSE file** (its README
+badge claims Apache-2.0 with nothing backing it), and these three carry no
+licence of their own. `webapp-testing` and `theme-factory` were taken because
+they each ship their own Apache-2.0 `LICENSE.txt`. Worth revisiting if upstream
+adds a repository licence.
+
+**~19 off-scope skills** — resume generators, raffle pickers, GIF creators,
+invoice and file organisers, and similar. Useful, but not this toolkit's job.
+
+**2 duplicates from the brand repo** — its `aso` (249 lines, 1 file) lost to the
+installed one (312 lines, 7 files); its `influencer-marketing` was longer but the
+installed version is wired into the marketing pack's cross-references, so
+replacing it would have stranded them.
 
 ## Removed after audit
 
@@ -80,11 +134,20 @@ upstream content. The zips themselves are not kept in the repository now that
 their contents are extracted here; the first two remain recoverable from git
 history at commit `318d3cb`.
 
-| Skill | Source archive |
+| Skill | Source |
 | --- | --- |
 | The 7 design skills | `ui-ux-pro-max-skill-main.zip` — upstream plugin `ui-ux-pro-max-skill` v2.6.2 (owner: nextlevelbuilder) |
 | The 48 marketing skills, and `../tools/` | `marketingskills-main.zip` — upstream `marketingskills` (Corey Haines) |
+| The 27 brand skills | [arnabbagxd/Brand-building-skills](https://github.com/arnabbagxd/Brand-building-skills) v1.2.0 (Arnab Bag) |
+| `webapp-testing`, `theme-factory` | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) |
 | `agentic-command-center` | `agentic-command-center-main.zip` |
+
+### Start brand work with `brand-context`
+
+The brand pack is designed around a shared context file. `brand-context`
+captures identity, audience, positioning, values and voice once, and every other
+brand skill reads it first. Run it before the rest, or they each re-ask the same
+foundational questions.
 
 The ui-ux archive also shipped duplicate copies of the same seven skills under
 `cli/assets/skills/` and `src/` (its CLI distribution payload); only the
