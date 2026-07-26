@@ -30,15 +30,18 @@ With 99 skills sharing vocabulary, description-matching sometimes picks a
 neighbour. When the target is known, name it: `/cro`, `/postgres-patterns`,
 `/brand-voice`. Reserve description-matching for genuine discovery.
 
-Known near-neighbours — disambiguate by naming one directly:
+Known near-neighbours. Each pair below now carries an explicit pointer in its
+description, so routing is usually automatic — name one directly only if the
+wrong one still fires:
 
+- `brand` ↔ `brand-voice` / `brand-messaging` / `brand-identity` /
+  `brand-guidelines` — applying an existing brand vs defining a new one
+- `ads` ↔ `google-ads` / `meta-ads` — cross-platform strategy vs platform execution
+- `marketing-research` ↔ `customer-research` / `competitor-profiling` —
+  researching a market from scratch vs analysing material you already hold
 - `cro` ↔ `signup` ↔ `onboarding` — page conversion vs registration vs activation
 - `competitors` ↔ `competitor-profiling` — comparison pages vs research dossiers
-- `ads` ↔ `google-ads` ↔ `meta-ads` — strategy vs platform execution
-- `brand-identity` ↔ `brand-packaging` — visual identity vs physical packaging
 - `copywriting` ↔ `copy-editing` — new copy vs improving existing
-- `marketing-research` triggers aggressively; it may pull work belonging to
-  `customer-research` or `copywriting`
 
 Brand work starts with `/brand-context` — the other 26 brand skills read the file
 it creates, and skipping it makes each re-ask the same questions.

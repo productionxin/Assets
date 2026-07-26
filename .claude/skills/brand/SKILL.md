@@ -1,6 +1,6 @@
 ---
 name: brand
-description: Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.
+description: Brand execution and asset management — logo usage rules, typography specifications, colour palette management, asset organisation, consistency and approval checklists, and the brand guidelines document itself. Use when applying or policing an existing brand — checking brand compliance, organising marketing assets, enforcing style guides, reviewing branded content. For defining a brand rather than applying one, see the strategy skills — brand-voice for tone, brand-messaging for messaging hierarchy, brand-identity for visual direction, brand-guidelines for authoring a new standards document.
 argument-hint: "[update|review|create] [args]"
 metadata:
   author: claudekit

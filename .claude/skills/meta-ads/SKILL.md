@@ -1,6 +1,6 @@
 ---
 name: meta-ads
-description: Plan, build, and optimize Meta advertising campaigns on Facebook and Instagram — campaign structure, audience targeting (core, custom, lookalike), creative formats, pixel setup, retargeting strategy, budget scaling, and ROAS optimization. Use when the user says "Meta ads", "Facebook ads", "Instagram ads", "Facebook advertising", "Meta advertising", "Meta campaigns", "Facebook campaign", "Instagram campaign", "Meta ad strategy", "ROAS", "Meta pixel", "Facebook pixel", "lookalike audiences", "Meta retargeting", "scaling Meta ads", "Facebook ad account", "Meta ads manager", "Facebook ads not working", or wants to run or improve paid social advertising on Facebook or Instagram.
+description: Plan, build, and optimize Meta advertising campaigns on Facebook and Instagram — campaign structure, audience targeting (core, custom, lookalike), creative formats, pixel setup, retargeting strategy, budget scaling, and ROAS optimization. Use when the user says "Meta ads", "Facebook ads", "Instagram ads", "Facebook advertising", "Meta advertising", "Meta campaigns", "Facebook campaign", "Instagram campaign", "Meta ad strategy", "ROAS", "Meta pixel", "Facebook pixel", "lookalike audiences", "Meta retargeting", "scaling Meta ads", "Facebook ad account", "Meta ads manager", "Facebook ads not working", or wants to run or improve paid social advertising on Facebook or Instagram. For cross-platform paid strategy, budget allocation and channel choice, see ads. For bulk creative generation, see ad-creative.
 metadata:
   version: 1.0.0
 ---
