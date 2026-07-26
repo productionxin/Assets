@@ -27,18 +27,17 @@
 
 ## 📦 Installing the skills
 
-This repo ships **8 Claude skills** in [`.claude/skills/`](.claude/skills/). They are already installed at **project level**, so they load automatically in any Claude Code session working inside this repository — no setup needed.
+This repo ships **56 Claude skills** in [`.claude/skills/`](.claude/skills/). They are already installed at **project level**, so they load automatically in any Claude Code session working inside this repository — no setup needed.
 
-| Skill | What it does |
-| --- | --- |
-| [`ui-ux-pro-max`](.claude/skills/ui-ux-pro-max/) | UI/UX design intelligence — 84 styles, 161 palettes, 73 font pairings, 25 charts, 17 stacks |
-| [`ui-styling`](.claude/skills/ui-styling/) | shadcn/ui + Tailwind, accessibility, bundled canvas fonts |
-| [`design`](.claude/skills/design/) | Brand identity, tokens, logo/icon generation, corporate identity program |
-| [`design-system`](.claude/skills/design-system/) | Three-layer tokens: primitive → semantic → component |
-| [`brand`](.claude/skills/brand/) | Voice, visual identity, messaging frameworks |
-| [`slides`](.claude/skills/slides/) | Strategic HTML presentations with Chart.js |
-| [`banner-design`](.claude/skills/banner-design/) | Social, ad, web hero, and print banners |
-| [`agentic-command-center`](.claude/skills/agentic-command-center/) | The advisory blueprint described below |
+| Group | Count | Covers |
+| --- | --- | --- |
+| **Marketing** | 48 | SEO, ads, copywriting, email, CRO, pricing, positioning, analytics, social, PR, lifecycle, competitor research |
+| **Design** | 7 | [`ui-ux-pro-max`](.claude/skills/ui-ux-pro-max/), [`ui-styling`](.claude/skills/ui-styling/), [`design`](.claude/skills/design/), [`design-system`](.claude/skills/design-system/), [`brand`](.claude/skills/brand/), [`slides`](.claude/skills/slides/), [`banner-design`](.claude/skills/banner-design/) |
+| **Planning** | 1 | [`agentic-command-center`](.claude/skills/agentic-command-center/) — the advisory blueprint described below |
+
+👉 **[Full catalogue, grouped by topic →](.claude/skills/README.md)**
+
+The marketing skills also draw on [`.claude/tools/`](.claude/tools/) — a 161-file integration reference (Google Ads, GA4, Segment, Customer.io, Apollo, Clay, and more) indexed by [`REGISTRY.md`](.claude/tools/REGISTRY.md). It is not a skill; it must stay at that path for the skills' relative links to resolve.
 
 ### Using them in *every* project
 
@@ -48,14 +47,16 @@ Project-level install means these skills work **inside this repo only**. To make
 git clone https://github.com/productionxin/Assets.git
 mkdir -p ~/.claude/skills
 cp -r Assets/.claude/skills/* ~/.claude/skills/
+cp -r Assets/.claude/tools ~/.claude/tools   # keeps the marketing skills' links working
 ```
 
-Two things to know about this route:
+Three things to know about this route:
 
 - It is **per-machine and not version-controlled** — re-run it on each machine you work from, and again whenever this repo updates.
-- It also makes `agentic-command-center` loadable everywhere. That skill refuses to write code for the remainder of any conversation it is invoked in, so you may prefer to copy only the seven design skills and leave that one project-scoped.
+- Copy `tools/` too, or 96 integration links inside the marketing skills will break. The skills reference it as `../../tools/`, so it belongs beside `skills/`, not inside it.
+- It also makes `agentic-command-center` loadable everywhere. That skill refuses to write code for the remainder of any conversation it is invoked in, so you may prefer to leave that one project-scoped and copy the rest.
 
-Everything here is standard library Python — there is no `pip install` step.
+There are no dependencies to install — the marketing skills are pure markdown, and the design skills' Python scripts use the standard library only.
 
 > See [`.claude/skills/README.md`](.claude/skills/README.md) for provenance, upstream versions, and known caveats.
 
