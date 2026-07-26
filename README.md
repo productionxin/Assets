@@ -27,12 +27,14 @@
 
 ## 📦 Installing the skills
 
-This repo ships **54 Claude skills** in [`.claude/skills/`](.claude/skills/). They are already installed at **project level**, so they load automatically in any Claude Code session working inside this repository — no setup needed.
+This repo ships **83 Claude skills** in [`.claude/skills/`](.claude/skills/). They are already installed at **project level**, so they load automatically in any Claude Code session working inside this repository — no setup needed.
 
 | Group | Count | Covers |
 | --- | --- | --- |
 | **Marketing** | 48 | SEO, ads, copywriting, email, CRO, pricing, positioning, analytics, social, PR, lifecycle, competitor research |
+| **Brand** | 27 | Strategy, architecture, naming, identity, voice, messaging, story, audit, measurement, rebranding, launch, plus D2C/B2B/personal-brand playbooks |
 | **Design** | 6 | [`ui-ux-pro-max`](.claude/skills/ui-ux-pro-max/), [`ui-styling`](.claude/skills/ui-styling/), [`design-system`](.claude/skills/design-system/), [`brand`](.claude/skills/brand/), [`slides`](.claude/skills/slides/), [`banner-design`](.claude/skills/banner-design/) |
+| **Build & test** | 2 | [`webapp-testing`](.claude/skills/webapp-testing/) (Playwright), [`theme-factory`](.claude/skills/theme-factory/) |
 
 👉 **[Full catalogue, grouped by topic →](.claude/skills/README.md)**
 👉 **[Worked example of the skills' output →](examples/)**
