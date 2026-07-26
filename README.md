@@ -27,11 +27,11 @@
 
 ## 📦 Installing the skills
 
-This repo ships **86 Claude skills** in [`.claude/skills/`](.claude/skills/). They are already installed at **project level**, so they load automatically in any Claude Code session working inside this repository — no setup needed.
+This repo ships **87 Claude skills** in [`.claude/skills/`](.claude/skills/). They are already installed at **project level**, so they load automatically in any Claude Code session working inside this repository — no setup needed.
 
 | Group | Count | Covers |
 | --- | --- | --- |
-| **Marketing** | 48 | SEO, ads, copywriting, email, CRO, pricing, positioning, analytics, social, PR, lifecycle, competitor research |
+| **Marketing** | 49 | SEO, ads, copywriting, email, CRO, pricing, positioning, analytics, social, PR, lifecycle, competitor research |
 | **Brand** | 27 | Strategy, architecture, naming, identity, voice, messaging, story, audit, measurement, rebranding, launch, plus D2C/B2B/personal-brand playbooks |
 | **Design** | 6 | [`ui-ux-pro-max`](.claude/skills/ui-ux-pro-max/), [`ui-styling`](.claude/skills/ui-styling/), [`design-system`](.claude/skills/design-system/), [`brand`](.claude/skills/brand/), [`slides`](.claude/skills/slides/), [`banner-design`](.claude/skills/banner-design/) |
 | **Build & test** | 2 | [`webapp-testing`](.claude/skills/webapp-testing/) (Playwright), [`theme-factory`](.claude/skills/theme-factory/) |
@@ -55,16 +55,26 @@ That's it. The skills are then available in every project on that machine, and `
 
 #### Install only what a project needs
 
-`one-man-army` loads all 86 skills, which is ~15,500 tokens of descriptions in every session. On a project that only needs one area, install a focused plugin instead:
+`one-man-army` loads all 87 skills, which is ~15,800 tokens of descriptions in every session. On a project that only needs one area, install a focused plugin instead:
 
 | Command | Skills |
 | --- | --- |
 | `/plugin install brand@productionx-skills` | 27 — strategy, naming, identity, voice, messaging, audit, launch |
-| `/plugin install marketing@productionx-skills` | 48 — SEO, ads, copy, email, CRO, pricing, analytics, PR |
+| `/plugin install marketing@productionx-skills` | 49 — SEO, ads, copy, email, CRO, pricing, analytics, PR, market research |
 | `/plugin install design@productionx-skills` | 6 — UI/UX intelligence, Tailwind/shadcn, tokens, slides, banners |
 | `/plugin install toolkit@productionx-skills` | 5 — Playwright testing, theming, ad extraction, domain and tweet tools |
 
 They can be combined: `brand` + `design` on a branding job, `marketing` alone on a growth engagement.
+
+#### One external plugin
+
+```
+/plugin install digital-marketing-pro@productionx-skills
+```
+
+[digital-marketing-pro](https://github.com/indranilbanerjee/digital-marketing-pro) (158 skills, MIT) is **referenced from upstream, not copied into this repo** — it's a coupled platform with its own `~/.claude-marketing/` state, so forking it would break it and freeze it. It adds client/agency operations, CRM sync, localisation and reputation management.
+
+Install it *instead of* `marketing` on a given project, not alongside — they overlap heavily and together run to ~244 skills. See [the notes](.claude/skills/README.md#external-plugins).
 
 #### Notes
 

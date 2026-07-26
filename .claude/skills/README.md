@@ -1,10 +1,10 @@
 # Installed skills
 
-**86 project-level Claude skills.** Everything in this directory is picked up
+**87 project-level Claude skills.** Everything in this directory is picked up
 automatically by Claude Code when working in `Assets/`.
 
-Only the frontmatter `description` of each skill stays loaded (~15,500 tokens for
-all 86). Full skill bodies load only when a skill actually triggers, so breadth
+Only the frontmatter `description` of each skill stays loaded (~15,800 tokens for
+all 87). Full skill bodies load only when a skill actually triggers, so breadth
 here costs almost nothing at rest — the reason to remove a skill is that it
 misfires or misleads, not that it takes up room.
 
@@ -18,18 +18,52 @@ exposes these same skills to *any* project:
 /plugin install one-man-army@productionx-skills
 ```
 
-Five plugins are declared — `one-man-army` (all 86) plus `brand` (27),
-`marketing` (48), `design` (6) and `toolkit` (5) for projects that need one area
-rather than everything. Each entry uses `source: "./"` with an explicit `skills`
-array, and `strict: false`, so the marketplace entry is the complete definition
-and no `plugin.json` is needed.
+Six plugins are declared. Five are local — `one-man-army` (all 87) plus `brand`
+(27), `marketing` (49), `design` (6) and `toolkit` (5), for projects that need one
+area rather than everything. Each uses `source: "./"` with an explicit `skills`
+array and `strict: false`, so the marketplace entry is the complete definition and
+no `plugin.json` is needed.
+
+The sixth, `digital-marketing-pro`, is **external** — a `source: {source: github}`
+pointer at [indranilbanerjee/digital-marketing-pro](https://github.com/indranilbanerjee/digital-marketing-pro)
+rather than a vendored copy. See [External plugins](#external-plugins) below.
 
 Because `source` is the repository root, `../tools/` ships with every plugin and
 the marketing skills' 96 integration links keep resolving in the installed copy.
 
 **Regenerate the manifest whenever skills are added or removed** — the `skills`
-arrays list all 86 paths explicitly, and a stale entry pointing at a deleted
+arrays list all 87 paths explicitly, and a stale entry pointing at a deleted
 directory is the likely failure mode.
+
+## External plugins
+
+`digital-marketing-pro` (158 skills, MIT, Indranil Banerjee) is **referenced, not
+copied**. It is installable from this marketplace but fetched from upstream:
+
+```
+/plugin install digital-marketing-pro@productionx-skills
+```
+
+It was not vendored because it is a coupled platform rather than a set of
+independent skills: 147 of its 158 skills read shared state under
+`~/.claude-marketing/` — `brands/{slug}/profile.json` alone is referenced 138
+times — created by its own `brand-setup`. Cherry-picking a handful would strand
+them, and copying all 158 would fork a project that already ships as a plugin and
+is actively versioned (v3.15.1). Referencing it keeps upstream updates flowing and
+avoids maintaining a fork.
+
+**Install it per project, not alongside `marketing`.** The two overlap heavily —
+`seo-audit`, `cro`, `ad-creative` and `programmatic-seo` collide by name, and
+another dozen collide by job — and together they are roughly 244 skills and 45,000
+tokens of descriptions in every session. Pick whichever suits the engagement.
+
+Where it genuinely goes beyond what is installed here: client and agency
+operations (`client-onboarding`, `client-proposal`, `client-report`, `qbr-plan`,
+`agency-dashboard`), `crm-sync`, localisation (`hreflang-check`,
+`translate-content`, `localize-campaign`, `region-config`), and reputation work
+(`crisis-response`, `review-response`, `share-of-voice`). It is tool-agnostic —
+its `.mcp.json` ships empty and skills refer to `~~CRM`-style placeholders — so it
+degrades to workflow guidance when no connector is attached.
 
 ## Brand — 27 skills
 
@@ -66,7 +100,7 @@ Strategy-layer brand work, one skill per discipline.
 | `slides` | Strategic HTML presentations with Chart.js and design tokens. |
 | `banner-design` | Banners for social, ads, web heroes, and print. |
 
-## Marketing — 48 skills
+## Marketing — 49 skills
 
 Grouped by what they cover. Each is its own directory here.
 
@@ -89,6 +123,9 @@ Grouped by what they cover. Each is its own directory here.
 **Revenue & analytics** — `analytics`, `revops`, `sales-enablement`
 
 **Media** — `social`, `video`, `image`
+
+**Research** — `marketing-research` (market awareness and sophistication stages,
+avatar profiling, unique mechanism, value proposition)
 
 ## Rejected from source repos
 
@@ -179,6 +216,7 @@ history at commit `318d3cb`.
 | The 7 design skills | `ui-ux-pro-max-skill-main.zip` — upstream plugin `ui-ux-pro-max-skill` v2.6.2 (owner: nextlevelbuilder) |
 | The 48 marketing skills, and `../tools/` | `marketingskills-main.zip` — upstream `marketingskills` (Corey Haines) |
 | The 27 brand skills | [arnabbagxd/Brand-building-skills](https://github.com/arnabbagxd/Brand-building-skills) v1.2.0 (Arnab Bag) |
+| `marketing-research` | [ishwarjha/claude-marketing-research-skill](https://github.com/ishwarjha/claude-marketing-research-skill) — Apache-2.0 |
 | `webapp-testing`, `theme-factory` | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) — Apache-2.0 |
 | `competitive-ads-extractor`, `domain-name-brainstormer`, `twitter-algorithm-optimizer` | same repo — **no licence**, see below |
 | `agentic-command-center` | `agentic-command-center-main.zip` |
