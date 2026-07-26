@@ -5,10 +5,10 @@ description: >
   Triggers include: "research my product", "develop my value proposition", "profile my avatar", "understand my market",
   "create a unique mechanism", "market awareness", "market sophistication", "ideal customer profile", "ICP research",
   "positioning research", "copywriting research", "features and benefits", "competitor research", "competitive analysis",
-  or any request to deeply research a product or audience for marketing purposes. Use this skill proactively whenever
-  a user wants to prepare materials for sales copy, landing pages, ads, email sequences, or any persuasion-focused
-  content. If a user says "help me understand my market", "I need to figure out my messaging", "who is my customer",
-  or "what makes my product different", this skill applies immediately.
+  or any request to deeply research a product or audience for marketing purposes.
+  For analysing existing customer interviews, surveys, support tickets or review mining, see customer-research.
+  For profiling competitors from their URLs, see competitor-profiling. For writing the copy this research feeds, see copywriting.
+  Use it to prepare materials for sales copy, landing pages, ads or email sequences.
 ---
 
 # Marketing Research Sourcebook

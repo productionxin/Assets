@@ -1,6 +1,6 @@
 ---
 name: google-ads
-description: Plan, build, and optimize Google Ads campaigns — Search, Shopping, Performance Max, Display, and YouTube — including keyword research, match types, bidding strategy, Quality Score, ad extensions, conversion tracking, and ROAS optimization. Use when the user says "Google Ads", "Google advertising", "Google campaign", "search ads", "Google Shopping", "Performance Max", "PMax", "Google Display", "YouTube ads", "keyword targeting", "Google Ads strategy", "Google Ads optimization", "Google Ads account", "Google Ads not working", "search campaign", "Quality Score", "bidding strategy", "Google conversion tracking", or wants to run or improve paid advertising on Google.
+description: Plan, build, and optimize Google Ads campaigns — Search, Shopping, Performance Max, Display, and YouTube — including keyword research, match types, bidding strategy, Quality Score, ad extensions, conversion tracking, and ROAS optimization. Use when the user says "Google Ads", "Google advertising", "Google campaign", "search ads", "Google Shopping", "Performance Max", "PMax", "Google Display", "YouTube ads", "keyword targeting", "Google Ads strategy", "Google Ads optimization", "Google Ads account", "Google Ads not working", "search campaign", "Quality Score", "bidding strategy", "Google conversion tracking", or wants to run or improve paid advertising on Google. For cross-platform paid strategy, budget allocation and channel choice, see ads. For bulk creative generation, see ad-creative.
 metadata:
   version: 1.0.0
 ---
