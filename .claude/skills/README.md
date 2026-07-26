@@ -1,7 +1,7 @@
 # Installed skills
 
 **99 project-level Claude skills.** Everything in this directory is picked up
-automatically by Claude Code when working in `Assets/`.
+automatically by Claude Code when working in `skills/`.
 
 Only the frontmatter `description` of each skill stays loaded. Measured across
 all 99: **~13,600 tokens, averaging ~136 per skill.** The bodies come to
@@ -17,7 +17,7 @@ misfires or misleads, not that it takes up room.
 exposes these same skills to *any* project:
 
 ```
-/plugin marketplace add productionxin/Assets
+/plugin marketplace add productionxin/skills
 /plugin install one-man-army@productionx-skills
 ```
 
@@ -27,7 +27,7 @@ projects that need one area rather than everything. Each uses `source: "./"` wit
 array and `strict: false`, so the marketplace entry is the complete definition and
 no `plugin.json` is needed.
 
-The sixth, `digital-marketing-pro`, is **external** — a `source: {source: github}`
+The seventh, `digital-marketing-pro`, is **external** — a `source: {source: github}`
 pointer at [indranilbanerjee/digital-marketing-pro](https://github.com/indranilbanerjee/digital-marketing-pro)
 rather than a vendored copy. See [External plugins](#external-plugins) below.
 

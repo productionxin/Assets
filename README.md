@@ -1,4 +1,4 @@
-<h1 align="center">Assets</h1>
+<h1 align="center">skills</h1>
 
 <p align="center">
   <strong>A 99-skill toolkit for brand, marketing, design and backend work — installable into any project as a Claude Code plugin.</strong>
@@ -17,7 +17,7 @@
 Run these once, from any project:
 
 ```
-/plugin marketplace add productionxin/Assets
+/plugin marketplace add productionxin/skills
 /plugin install one-man-army@productionx-skills
 ```
 
@@ -74,7 +74,7 @@ Install it *instead of* `marketing` on a given project, not alongside — they o
 
 - **No dependencies.** Marketing and brand skills are pure markdown; the design skills' Python uses the standard library only.
 - **`.claude/tools/` travels with the plugin** — all 96 integration links resolve from the installed copy, verified against a fresh checkout.
-- **Manual alternative.** `cp -r Assets/.claude/skills/* ~/.claude/skills/` and `cp -r Assets/.claude/tools ~/.claude/tools` works too, but it's per-machine, unversioned, and needs redoing on every update.
+- **Manual alternative.** `cp -r skills/.claude/skills/* ~/.claude/skills/` and `cp -r skills/.claude/tools ~/.claude/tools` works too, but it's per-machine, unversioned, and needs redoing on every update.
 - **Three skills are unlicensed upstream** — fine locally, but drop them from `marketplace.json` before sharing the marketplace publicly. See [the notes](.claude/skills/README.md#unlicensed-skills).
 - **Two skills were deliberately removed** — `design` (duplicated `slides`/`banner-design`, needed a Gemini API key) and `agentic-command-center` (declines to write code for the rest of any conversation it enters). See [the audit notes](.claude/skills/README.md#removed-after-audit).
 
