@@ -35,6 +35,7 @@ This repo ships **54 Claude skills** in [`.claude/skills/`](.claude/skills/). Th
 | **Design** | 6 | [`ui-ux-pro-max`](.claude/skills/ui-ux-pro-max/), [`ui-styling`](.claude/skills/ui-styling/), [`design-system`](.claude/skills/design-system/), [`brand`](.claude/skills/brand/), [`slides`](.claude/skills/slides/), [`banner-design`](.claude/skills/banner-design/) |
 
 👉 **[Full catalogue, grouped by topic →](.claude/skills/README.md)**
+👉 **[Worked example of the skills' output →](examples/)**
 
 The marketing skills also draw on [`.claude/tools/`](.claude/tools/) — a 161-file integration reference (Google Ads, GA4, Segment, Customer.io, Apollo, Clay, and more) indexed by [`REGISTRY.md`](.claude/tools/REGISTRY.md). It is not a skill; it must stay at that path for the skills' relative links to resolve.
 
