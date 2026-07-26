@@ -44,22 +44,34 @@ The marketing skills also draw on [`.claude/tools/`](.claude/tools/) — a 161-f
 
 ### Using them in *every* project
 
-Project-level install means these skills work **inside this repo only**. To make them available in all your work, copy them into your home skills directory:
+The skills above load automatically only inside this repository. To get them in **any** project, install this repo as a plugin marketplace — run these once, from anywhere:
 
-```bash
-git clone https://github.com/productionxin/Assets.git
-mkdir -p ~/.claude/skills
-cp -r Assets/.claude/skills/* ~/.claude/skills/
-cp -r Assets/.claude/tools ~/.claude/tools   # keeps the marketing skills' links working
+```
+/plugin marketplace add productionxin/Assets
+/plugin install one-man-army@productionx-skills
 ```
 
-Three things to know about this route:
+That's it. The skills are then available in every project on that machine, and `/plugin marketplace update` pulls any changes made here.
 
-- It is **per-machine and not version-controlled** — re-run it on each machine you work from, and again whenever this repo updates.
-- Copy `tools/` too, or 96 integration links inside the marketing skills will break. The skills reference it as `../../tools/`, so it belongs beside `skills/`, not inside it.
-- Two skills were audited out and are deliberately not installed — `design` (duplicated `slides` and `banner-design`, and needed a Gemini API key) and `agentic-command-center` (declines to write code for the rest of any conversation it enters). See [the audit notes](.claude/skills/README.md#removed-after-audit).
+#### Install only what a project needs
 
-There are no dependencies to install — the marketing skills are pure markdown, and the design skills' Python scripts use the standard library only.
+`one-man-army` loads all 86 skills, which is ~15,500 tokens of descriptions in every session. On a project that only needs one area, install a focused plugin instead:
+
+| Command | Skills |
+| --- | --- |
+| `/plugin install brand@productionx-skills` | 27 — strategy, naming, identity, voice, messaging, audit, launch |
+| `/plugin install marketing@productionx-skills` | 48 — SEO, ads, copy, email, CRO, pricing, analytics, PR |
+| `/plugin install design@productionx-skills` | 6 — UI/UX intelligence, Tailwind/shadcn, tokens, slides, banners |
+| `/plugin install toolkit@productionx-skills` | 5 — Playwright testing, theming, ad extraction, domain and tweet tools |
+
+They can be combined: `brand` + `design` on a branding job, `marketing` alone on a growth engagement.
+
+#### Notes
+
+- **No dependencies.** The marketing and brand skills are pure markdown; the design skills' Python uses the standard library only.
+- **`.claude/tools/` travels with the plugin.** All 96 integration links inside the marketing skills resolve from the installed copy — verified against a fresh checkout.
+- **Manual alternative.** If you'd rather not use plugins, `cp -r Assets/.claude/skills/* ~/.claude/skills/` and `cp -r Assets/.claude/tools ~/.claude/tools` still works — but it's per-machine, unversioned, and needs redoing on every update.
+- **Two skills are deliberately absent** — `design` (duplicated `slides`/`banner-design`, needed a Gemini API key) and `agentic-command-center` (declines to write code for the rest of any conversation it enters). See [the audit notes](.claude/skills/README.md#removed-after-audit).
 
 > See [`.claude/skills/README.md`](.claude/skills/README.md) for provenance, upstream versions, and known caveats.
 

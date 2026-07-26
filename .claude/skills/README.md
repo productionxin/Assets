@@ -8,6 +8,29 @@ all 86). Full skill bodies load only when a skill actually triggers, so breadth
 here costs almost nothing at rest — the reason to remove a skill is that it
 misfires or misleads, not that it takes up room.
 
+## Also published as a plugin marketplace
+
+[`../../.claude-plugin/marketplace.json`](../../.claude-plugin/marketplace.json)
+exposes these same skills to *any* project:
+
+```
+/plugin marketplace add productionxin/Assets
+/plugin install one-man-army@productionx-skills
+```
+
+Five plugins are declared — `one-man-army` (all 86) plus `brand` (27),
+`marketing` (48), `design` (6) and `toolkit` (5) for projects that need one area
+rather than everything. Each entry uses `source: "./"` with an explicit `skills`
+array, and `strict: false`, so the marketplace entry is the complete definition
+and no `plugin.json` is needed.
+
+Because `source` is the repository root, `../tools/` ships with every plugin and
+the marketing skills' 96 integration links keep resolving in the installed copy.
+
+**Regenerate the manifest whenever skills are added or removed** — the `skills`
+arrays list all 86 paths explicitly, and a stale entry pointing at a deleted
+directory is the likely failure mode.
+
 ## Brand — 27 skills
 
 Strategy-layer brand work, one skill per discipline.
@@ -181,6 +204,14 @@ practical position is simply that no author has granted redistribution rights, s
 treat them as internal reference rather than something to re-publish, and swap
 them out if upstream never clarifies. Their *output* is not the concern; their
 redistribution is.
+
+**This now matters more than it did.** Publishing the repository as a plugin
+marketplace makes it a distribution channel, and these three are included in the
+`one-man-army` and `toolkit` plugins. That is fine while the marketplace is used
+privately. If it is ever shared more widely, the clean fix is to drop those three
+paths from both `skills` arrays in
+[`marketplace.json`](../../.claude-plugin/marketplace.json) — they stay installed
+here for local use, and simply stop being redistributed.
 
 ## Licensing
 
