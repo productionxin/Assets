@@ -25,9 +25,45 @@
 
 ---
 
+## 📦 Installing the skills
+
+This repo ships **8 Claude skills** in [`.claude/skills/`](.claude/skills/). They are already installed at **project level**, so they load automatically in any Claude Code session working inside this repository — no setup needed.
+
+| Skill | What it does |
+| --- | --- |
+| [`ui-ux-pro-max`](.claude/skills/ui-ux-pro-max/) | UI/UX design intelligence — 84 styles, 161 palettes, 73 font pairings, 25 charts, 17 stacks |
+| [`ui-styling`](.claude/skills/ui-styling/) | shadcn/ui + Tailwind, accessibility, bundled canvas fonts |
+| [`design`](.claude/skills/design/) | Brand identity, tokens, logo/icon generation, corporate identity program |
+| [`design-system`](.claude/skills/design-system/) | Three-layer tokens: primitive → semantic → component |
+| [`brand`](.claude/skills/brand/) | Voice, visual identity, messaging frameworks |
+| [`slides`](.claude/skills/slides/) | Strategic HTML presentations with Chart.js |
+| [`banner-design`](.claude/skills/banner-design/) | Social, ad, web hero, and print banners |
+| [`agentic-command-center`](.claude/skills/agentic-command-center/) | The advisory blueprint described below |
+
+### Using them in *every* project
+
+Project-level install means these skills work **inside this repo only**. To make them available in all your work, copy them into your home skills directory:
+
+```bash
+git clone https://github.com/productionxin/Assets.git
+mkdir -p ~/.claude/skills
+cp -r Assets/.claude/skills/* ~/.claude/skills/
+```
+
+Two things to know about this route:
+
+- It is **per-machine and not version-controlled** — re-run it on each machine you work from, and again whenever this repo updates.
+- It also makes `agentic-command-center` loadable everywhere. That skill refuses to write code for the remainder of any conversation it is invoked in, so you may prefer to copy only the seven design skills and leave that one project-scoped.
+
+Everything here is standard library Python — there is no `pip install` step.
+
+> See [`.claude/skills/README.md`](.claude/skills/README.md) for provenance, upstream versions, and known caveats.
+
+---
+
 ## 🤔 What is this?
 
-This repo is a single **Claude skill** — a guided playbook you drop into your AI assistant. When you run it, the AI becomes an architect and advisor that walks you, phase by phase, through planning your own **AI command center**: one chat or voice interface where you (or your team) type a request and one AI figures out which of your business systems to touch and does it.
+The skill this repo was originally built around is **agentic-command-center** — a guided playbook you drop into your AI assistant. When you run it, the AI becomes an architect and advisor that walks you, phase by phase, through planning your own **AI command center**: one chat or voice interface where you (or your team) type a request and one AI figures out which of your business systems to touch and does it.
 
 > **📐 It's a blueprint, not a builder.**
 > This skill deliberately writes **no code** and builds **nothing** — not in Claude Code, not in the Claude app. It gives you the **thinking, the principles, and the order of operations**, and leaves the *how* entirely up to you and the stack you choose. If you want something concrete to study or run today, that's what [ForgeChat](https://github.com/Forgemind-git/ForgeChat) is for.
@@ -37,9 +73,9 @@ This repo is a single **Claude skill** — a guided playbook you drop into your 
 There are two ways, depending on how you work.
 
 **A. If you use Claude Code**
-1. Copy this folder into your skills directory:
-   ```
-   ~/.claude/skills/agentic-command-center/
+1. Already installed in this repo. To use it elsewhere, copy the skill into your home skills directory:
+   ```bash
+   cp -r .claude/skills/agentic-command-center ~/.claude/skills/
    ```
 2. Start Claude Code and run:
    ```
