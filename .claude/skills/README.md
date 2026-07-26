@@ -1,10 +1,10 @@
 # Installed skills
 
-**83 project-level Claude skills.** Everything in this directory is picked up
+**86 project-level Claude skills.** Everything in this directory is picked up
 automatically by Claude Code when working in `Assets/`.
 
-Only the frontmatter `description` of each skill stays loaded (~15,000 tokens for
-all 83). Full skill bodies load only when a skill actually triggers, so breadth
+Only the frontmatter `description` of each skill stays loaded (~15,500 tokens for
+all 86). Full skill bodies load only when a skill actually triggers, so breadth
 here costs almost nothing at rest — the reason to remove a skill is that it
 misfires or misleads, not that it takes up room.
 
@@ -81,13 +81,8 @@ infrastructure that is not present.
 `pptx`, `xlsx`, `mcp-builder`, `skill-creator`, `artifacts-builder` all ship
 natively in the environment already.
 
-**3 unlicensed skills** — `competitive-ads-extractor`,
-`domain-name-brainstormer` and `twitter-algorithm-optimizer` were wanted on
-merit, but `awesome-claude-skills` has **no top-level LICENSE file** (its README
-badge claims Apache-2.0 with nothing backing it), and these three carry no
-licence of their own. `webapp-testing` and `theme-factory` were taken because
-they each ship their own Apache-2.0 `LICENSE.txt`. Worth revisiting if upstream
-adds a repository licence.
+*(Three more were initially held back on licensing and have since been installed
+by an explicit decision — see [Unlicensed skills](#unlicensed-skills) below.)*
 
 **~19 off-scope skills** — resume generators, raffle pickers, GIF creators,
 invoice and file organisers, and similar. Useful, but not this toolkit's job.
@@ -139,7 +134,8 @@ history at commit `318d3cb`.
 | The 7 design skills | `ui-ux-pro-max-skill-main.zip` — upstream plugin `ui-ux-pro-max-skill` v2.6.2 (owner: nextlevelbuilder) |
 | The 48 marketing skills, and `../tools/` | `marketingskills-main.zip` — upstream `marketingskills` (Corey Haines) |
 | The 27 brand skills | [arnabbagxd/Brand-building-skills](https://github.com/arnabbagxd/Brand-building-skills) v1.2.0 (Arnab Bag) |
-| `webapp-testing`, `theme-factory` | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) |
+| `webapp-testing`, `theme-factory` | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) — Apache-2.0 |
+| `competitive-ads-extractor`, `domain-name-brainstormer`, `twitter-algorithm-optimizer` | same repo — **no licence**, see below |
 | `agentic-command-center` | `agentic-command-center-main.zip` |
 
 ### Start brand work with `brand-context`
@@ -160,9 +156,36 @@ From the marketing archive, `skills/` and `tools/` were installed. Its
 repository scaffolding — `AGENTS.md`, `CONTRIBUTING.md`, `VERSIONS.md`, and two
 validator shell scripts — was not carried over.
 
+## Unlicensed skills
+
+Three installed skills carry **no licence at all**, and this is worth knowing
+before their output goes anywhere commercial.
+
+| Skill | Licence status |
+| --- | --- |
+| `competitive-ads-extractor` | none |
+| `domain-name-brainstormer` | none |
+| `twitter-algorithm-optimizer` | none |
+
+They come from
+[ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills),
+which has **no top-level LICENSE file** — its README carries an Apache-2.0 badge,
+but no licence text backs it — and none of these three ship a licence of their
+own. By contrast `webapp-testing` and `theme-factory`, from the same repository,
+each include an Apache-2.0 `LICENSE.txt`, which is why those two were
+uncontroversial.
+
+They were held back on the first pass and installed afterwards by an explicit
+decision to take them anyway. That decision is recorded, not disputed — the
+practical position is simply that no author has granted redistribution rights, so
+treat them as internal reference rather than something to re-publish, and swap
+them out if upstream never clarifies. Their *output* is not the concern; their
+redistribution is.
+
 ## Licensing
 
-Both upstream packages are MIT-licensed, and their notices are preserved here:
+The other upstream packages are properly licensed, and their notices are
+preserved here:
 
 - [`LICENSE-ui-ux-pro-max.txt`](LICENSE-ui-ux-pro-max.txt) — © 2024 Next Level Builder
 - [`LICENSE-marketing-skills.txt`](LICENSE-marketing-skills.txt) — © 2025 Corey Haines
