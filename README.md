@@ -1,12 +1,13 @@
-<h1 align="center">skills</h1>
+<h1 align="center">Production X · Skills</h1>
 
-<p align="center"><sub>repository: <code>productionxin/Assets</code></sub></p>
+<p align="center"><sub>productionxin/Assets · maintained by Production X</sub></p>
 
 <p align="center">
-  <strong>A 99-skill toolkit for brand, marketing, design and backend work — installable into any project as a Claude Code plugin.</strong>
+  <strong>Production X's working toolkit — 99 skills for brand, marketing, design and backend, installable into any project as a Claude Code plugin.</strong>
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Production%20X-toolkit-C9A84C.svg" alt="Production X toolkit"/>
   <img src="https://img.shields.io/badge/skills-99-8A2BE2.svg" alt="99 skills"/>
   <img src="https://img.shields.io/badge/install-plugin%20marketplace-blue.svg" alt="Plugin marketplace"/>
   <img src="https://img.shields.io/badge/licences-MIT%20%2F%20Apache--2.0-brightgreen.svg" alt="Licences"/>
@@ -80,11 +81,15 @@ Install it *instead of* `marketing` on a given project, not alongside — they o
 - **Three skills are unlicensed upstream** — fine locally, but drop them from `marketplace.json` before sharing the marketplace publicly. See [the notes](.claude/skills/README.md#unlicensed-skills).
 - **Two skills were deliberately removed** — `design` (duplicated `slides`/`banner-design`, needed a Gemini API key) and `agentic-command-center` (declines to write code for the rest of any conversation it enters). See [the audit notes](.claude/skills/README.md#removed-after-audit).
 
-## Provenance
+## Licence
 
-Every skill is copied verbatim from a permissively licensed upstream project, with each source, version and licence recorded in [`.claude/skills/README.md`](.claude/skills/README.md) — along with what was rejected and why.
+The toolkit is **© 2026 Production X**, MIT — see [`LICENSE`](LICENSE). That covers what Production X built: the curation, the plugin marketplace, the working rules, the documentation and the examples.
 
-Sources: [marketingskills](https://github.com/coreyhaines31/marketingskills) (Corey Haines) · [Brand-building-skills](https://github.com/arnabbagxd/Brand-building-skills) (Arnab Bag) · [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (nextlevelbuilder) · [everything-claude-code](https://github.com/affaan-m/everything-claude-code) · [claude-office-skills](https://github.com/claude-office-skills/skills) · [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) · [claude-marketing-research-skill](https://github.com/ishwarjha/claude-marketing-research-skill)
+The individual skills are third-party works redistributed under their own licences, which are kept intact in [`.claude/skills/`](.claude/skills/). Assembling and maintaining the toolkit is Production X's; the components are credited below.
+
+## Credits
+
+Skills are vendored verbatim from permissively licensed projects. Each source, version and licence is recorded in [`.claude/skills/README.md`](.claude/skills/README.md), along with what was rejected and why. [marketingskills](https://github.com/coreyhaines31/marketingskills) (Corey Haines) · [Brand-building-skills](https://github.com/arnabbagxd/Brand-building-skills) (Arnab Bag) · [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (nextlevelbuilder) · [everything-claude-code](https://github.com/affaan-m/everything-claude-code) · [claude-office-skills](https://github.com/claude-office-skills/skills) · [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) · [claude-marketing-research-skill](https://github.com/ishwarjha/claude-marketing-research-skill)
 
 ## Also here
 

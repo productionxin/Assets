@@ -1,4 +1,4 @@
-# Installed skills
+# Production X · installed skills
 
 **99 project-level Claude skills.** Everything in this directory is picked up
 automatically by Claude Code when working in `Assets/`.
@@ -223,7 +223,11 @@ Apollo, Clay, and so on) and CLI notes. It is not a skill and is never loaded on
 its own — the skills reference it by relative path, so it must stay at
 `.claude/tools/` for those 96 links to resolve.
 
-## Provenance
+## Credits and provenance
+
+Curation, selection and maintenance are Production X's (© 2026, MIT — see the
+root [`LICENSE`](../../LICENSE)). The skills themselves are third-party works,
+redistributed under their own licences, credited below and retained in full.
 
 All files were copied **verbatim** from three source zips — no edits were made to
 upstream content. The zips themselves are not kept in the repository now that

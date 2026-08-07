@@ -238,7 +238,7 @@ After gathering information, create `.agents/product-marketing.md` with this str
   - **Updating an existing document:** increment the version (v2 → v3 …), update `Last updated` to today, and **prepend a new Changelog entry** at the top of the list (newest first) summarizing *what changed and why* in one line. Never rewrite or reorder past entries.
   - A good entry names the sections touched and the reason, not "updated the doc." Examples:
     - `- v3 (2026-07-16) — Repositioned from "email tool" to "deliverability platform"; added RevOps to the ICP.`
-    - `- v2 (2026-06-02) — Rewrote value prop and objections after 5 customer interviews; added competitor Acme.`
+    - `- v2 (2026-06-02) — Rewrote value prop and objections after 5 customer interviews; added competitor Production X.`
   - Use today's date in ISO form (YYYY-MM-DD) for the entry and `Last updated`.
   - **Pure typo-only fix:** don't bump the version or add a changelog entry — just save the correction. Every other change bumps the version and gets an entry. When the change is a real repositioning, say so plainly — downstream skills will now generate against the new context.
 - Save to `.agents/product-marketing.md`

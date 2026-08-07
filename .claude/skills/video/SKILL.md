@@ -66,7 +66,7 @@ import { render } from "hyperframes";
 
 await render({
   frames: [
-    { html: "<h1>Welcome to Acme</h1>", duration: 3 },
+    { html: "<h1>Welcome to Production X</h1>", duration: 3 },
     { html: "<h2>Here's what we built</h2>", duration: 3 },
     { html: "<p>Try it free →</p>", duration: 2 },
   ],
