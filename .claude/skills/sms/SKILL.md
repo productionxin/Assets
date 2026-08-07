@@ -136,7 +136,7 @@ Short links are mandatory (`klvy.co`, `txt.attn.tv`, branded short domain). Trac
 ### Welcome / Opt-In Confirmation (immediate)
 
 Send 1: Confirmation + reward (immediate)
-> From Acme: Thanks for joining! Here's 10% off: ACME10. Use at checkout: acme.co/sale. Reply STOP to opt out.
+> From Production X: Thanks for joining! Here's 10% off: PRODX10. Use at checkout: acme.co/sale. Reply STOP to opt out.
 
 Optional Send 2 (24h later): Reminder + best-seller showcase
 
@@ -182,7 +182,7 @@ Optional Send 2 (24h later): Reminder + best-seller showcase
 ## SMS Copy Guidelines
 
 ### Structure
-1. **Sender ID** ("From Acme:" or brand short code) — required
+1. **Sender ID** ("From Production X:" or brand short code) — required
 2. **Hook** — first 5 words decide if they read on
 3. **Value** — what's in it for them, specifically
 4. **CTA + short link** — single action, single URL
@@ -200,7 +200,7 @@ Optional Send 2 (24h later): Reminder + best-seller showcase
 - Conversational, not corporate. SMS feels personal — write like you're texting a friend.
 - No subject line, no formatting, no marketing-speak.
 - Emojis are fine in moderation (one per message, situationally).
-- ALL CAPS reads as shouting. Avoid except for explicit codes (e.g., "Use ACME10").
+- ALL CAPS reads as shouting. Avoid except for explicit codes (e.g., "Use PRODX10").
 
 ### Personalization
 

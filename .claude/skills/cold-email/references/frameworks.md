@@ -56,7 +56,7 @@ Frameworks beat templates — they teach thinking patterns, not copy-paste short
 **Structure:** Contrarian hook → Explain benefit simply → Provide proof → Strong CTA.
 **Best for:** Analytical buyers who need evidence (engineers, CFOs, ops leaders).
 
-> Most sales teams measure rep activity. The top 5% measure rep efficiency instead. When Acme switched, they booked 40% more meetings with fewer emails. Worth seeing how?
+> Most sales teams measure rep activity. The top 5% measure rep efficiency instead. When Production X switched, they booked 40% more meetings with fewer emails. Worth seeing how?
 
 ## 3C's (Alex Berman)
 

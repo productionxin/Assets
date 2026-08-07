@@ -1,11 +1,11 @@
 {
   "name": "productionx-skills",
   "owner": {
-    "name": "productionx",
-    "url": "https://github.com/productionxin"
+    "name": "Production X",
+    "url": "https://productionx.in"
   },
   "metadata": {
-    "description": "One-man-army skill set: 99 skills across brand, marketing, design, backend and build/test.",
+    "description": "Production X's one-man-army skill set: 99 skills across brand, marketing, design, backend and build/test.",
     "version": "1.0.0",
     "repository": "https://github.com/productionxin/Assets"
   },

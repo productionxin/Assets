@@ -79,7 +79,7 @@ For blog posts and news articles.
   "dateModified": "2024-01-20T10:00:00+00:00",
   "author": {
     "@type": "Person",
-    "name": "Jane Doe",
+    "name": "Production X",
     "url": "https://example.com/authors/jane"
   },
   "publisher": {

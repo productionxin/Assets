@@ -515,7 +515,7 @@ save_offers:
 **Output**:
 
 ```markdown
-# QBR Presentation - Acme Corp
+# QBR Presentation - Production X Corp
 ## Q4 2025
 
 ---
@@ -589,7 +589,7 @@ Would you like beta access to AI features?
 
 | Action | Owner | Date |
 |--------|-------|------|
-| Marketing demo | Acme | Jan 15 |
+| Marketing demo | Production X | Jan 15 |
 | API tier proposal | CSM | Jan 20 |
 | Renewal discussion | Both | Feb 1 |
 
