@@ -150,6 +150,76 @@ Then move on.
 
 ---
 
+## If she asks something you don't know
+
+First, relax. **This is a listening call. You are not supposed to have all answers.** She is a solo founder who needs help, she is probably a bit nervous also. She is not testing you.
+
+### The one line to remember
+
+> "That's a good question. Let me check properly and tell you correctly, rather than saying something wrong now."
+
+Say this whenever you are stuck. It works every single time.
+
+And it actually suits you. Your whole pitch is that you did the homework instead of guessing. Saying *"let me check"* proves it. Guessing breaks it.
+
+### Likely questions, and what to say
+
+**"How much will it cost?"**
+> "Let me understand everything properly first, then I will come back with proper numbers. I don't want to quote you for the wrong thing."
+
+**"How many followers can you get me? By when?"**
+Never give a number. This is the one place a wrong answer really hurts you later.
+> "Honestly, anyone who promises you a number is guessing. What I can tell you is Katie took around a year and posted 369 times. You have posted 34. So the real work is volume and consistency, not any shortcut."
+
+**"Have you done this before? Who else have you worked with?"**
+If you have examples, show them. If this is your first of this type, say so plainly:
+> "Not exactly this, no. What I can do is handle the filming, editing, captions and posting so it actually goes out every week. That part I know well."
+
+Honesty here costs you nothing. Getting caught exaggerating costs you everything.
+
+**"Do you know AI? Can you teach me?"**
+Be clear on this or you will get scope creep later.
+> "You are the one teaching AI, that is your side. My side is making sure your content actually reaches people."
+
+**"What should I post? Give me some ideas."**
+Don't invent something on the spot. It will be half-baked and she will judge you on it.
+> "I have some thoughts, but let me hear everything first. I would rather give you a proper plan than say something random now."
+
+**"Should I stop posting relationship content?"**
+This is the biggest question in the whole strategy. Do not answer it casually in passing.
+> "I have a view on this, and I want to discuss it properly next time. Can I come back to you on it?"
+
+**"Can you also do my website / ads / podcast?"**
+> "Possible, but let's first get the content running properly. We can add things later."
+
+**"Be honest, what do you think of my content?"**
+Careful. Say something too soft and you lose credibility. Too harsh and she gets defensive.
+> "The captions are genuinely good, you write well. I do think some things are working against you, but I want to explain it properly with examples, not in one line."
+
+**"Why did Katie grow so fast?"**
+You actually know this one. Answer with confidence:
+> "She is not teaching, she is documenting. She told everyone she is running an experiment on her own life and people came back to see what happened. And it is all selfie camera, nothing fancy."
+
+### Five things you can say confidently
+
+You know these now. They are true, and they are more than most people pitching her will know.
+
+1. Katie (@upgradingkatie) is at **415K** doing almost exactly what neXtHer wants to be
+2. **Nobody is doing it in India in Hinglish** for Indian mothers
+3. Katie has **369 posts**, Juhi has **34** — volume is the real gap
+4. Katie's growth is on **selfie camera**, not expensive production
+5. Mel Robbins' Instagram works because of her **book and podcast**, not the other way round
+
+### Never do this
+
+- Don't make up a number. Not followers, not timelines, not results.
+- Don't say yes to work you haven't scoped.
+- Don't pretend to know a tool or platform you haven't used.
+
+One "let me check and revert" is professional. Three wrong answers she discovers later, and you are finished.
+
+---
+
 ## After the call
 
 Update the deck with what she actually said, and present it on call two. Most of it will stay same. The difference is it will be built on her words, and you will be able to explain every slide, because by then you will actually understand the business.
