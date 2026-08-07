@@ -1,88 +1,136 @@
-# WhatsApp — re-opening after the missed call
+# The message, and the call
 
-**Context:** last exchange 30 July 2026. You cancelled a scheduled call (family emergency), said you'd reviewed her profile and references, promised "a few ideas" and that you'd reach out once settled. She replied *"Ok. Please take care."* Eight days have passed.
+**Where things stand:** last exchange 30 July. You cancelled a call (family emergency), told her you'd been through her profile and references, promised ideas, said you'd reach out. She replied *"Ok. Please take care."* Eight days ago.
+
+**What tomorrow's call is:** you listening. Not pitching.
 
 ---
 
-## The one big decision: don't send the deck yet
+## Don't send the deck. Don't pitch on the call.
 
-My earlier draft assumed you were sending the proposal cold. **That's now wrong.** Book the call first, present the deck on it, send the PDF afterwards as the leave-behind.
+The proposal stays in your drive for now. Two reasons:
 
-Three reasons:
+1. **You don't fully understand her business yet** — because she hasn't explained it yet. Anything you present is a guess dressed up as a plan.
+2. **The deck is blunt.** "Four different businesses," "you've never spoken on camera." Delivered by someone who cancelled on her, before she's felt heard, that's insulting. After she's talked for 40 minutes and you've understood her, the same points become insight.
 
-1. **You promised her a discussion**, not a document. Delivering a PDF instead of the conversation you owe her repeats the letdown.
-2. **The deck is blunt.** "Four different businesses," "you've never spoken on camera," "we want to sell you less filming." Read alone on a phone with no one to ask, that lands as criticism from someone who cancelled on her. Said out loud, with warmth, it lands as insight.
-3. **It has pricing in it.** Numbers before a conversation — right after a cancellation — is the wrong order.
-
-The deck was built to be walked through. Its last slide literally asks for the 45 minutes.
+Everything in the proposal survives. It just goes **second**, rewritten with what she tells you.
 
 ---
 
 ## Tomorrow's message
 
-*Send as separate messages. Fill in two real time slots.*
+*Separate messages. Put two real slots in.*
 
 **1.**
 > Hi Juhi — all settled on my end now. Thanks again for being so understanding about the call.
 
 **2.**
-> I actually kept working on this while I was away. Went much deeper on your account, on Katie's and Mel's, and on what's happening in this space in India right now.
+> I've spent proper time on your account since, and on Katie's and Mel's, and on what's happening in this space in India. I've got some thoughts.
 
 **3.**
-> Two things came out of it that I'd rather show you than type. One is about where neXtHer fits in the market — there's a gap, and it's wide open. The other is about your current account, and I don't think it's something you'd have spotted from the inside.
+> But before I put anything formal together, I'd rather hear it properly from you — where neXtHer is right now, who you're building it for, and what you actually want a partner to take off your plate. I'd rather build around what you need than guess at it.
 
 **4.**
-> Can I get 45 minutes with you this week? I'm free **[Monday 11am]** or **[Tuesday 4pm]** — whichever works. I've put something together to walk you through.
+> Can I get 45 minutes this week? Free **[Monday 11am]** or **[Tuesday 4pm]** — whichever suits you.
+
+**Why this works:** the apology is one line, not three. "I've got some thoughts" earns credit for the eight days without spending them. And asking to listen is both the truth and the easiest thing in the world for her to say yes to.
 
 ---
 
-### Why it's built this way
+## The call — 45 minutes, and you should be talking for about 10 of them
 
-- **One light apology, then move on.** You already apologised on the 30th. Repeating it makes you look unreliable instead of considerate.
-- **"I kept working on it while I was away"** turns the eight-day gap from a lapse into evidence you're serious.
-- **Two teasers, no answers.** One flattering (the gap is wide open), one intriguing (something about your account you can't see from inside). She has to take the call to find out.
-- **Two specific slots.** "Let me know when you're free" gets no reply. A yes/no question gets an answer.
+Have this open on a second screen. **Take notes; tell her you're taking notes.**
+
+### 1. Open (2 min)
+Thank her for the patience. Then:
+
+> "Before I show you anything — I'd just like to understand the business properly. Can I ask you a bunch of questions?"
+
+### 2. The vision — let her run (8 min)
+
+> **"Tell me about neXtHer. Where did it come from?"**
+
+Then say nothing. Let her talk. Follow-ups only:
+- *"What made you start it?"*
+- *"What does it look like in two years if it goes well?"*
+
+**Listen for:** is this a real business she's committed to, or an idea she's excited about this month? Her energy tells you more than her words.
+
+### 3. What actually exists today (5 min)
+
+- **"What exists so far — website, product, anything written down?"**
+- **"Has anyone paid you for anything neXtHer-related yet?"**
+- **"Your bio says 'trusted by 100+ women' — tell me about them. Paying clients, or free sessions?"**
+
+**Listen for:** whether she has proof or a claim. This is the difference between selling a programme in month two and having to build one first.
+
+### 4. Who it's for (5 min)
+
+- **"Picture one woman this is for. Who is she, what's her day like, what's she stuck on?"**
+- **"How do you know her — is she someone you've coached?"**
+
+**Listen for:** whether she describes a real person or a demographic. Real person = she knows her market.
+
+### 5. The product and the money (7 min)
+
+- **"What would she actually buy from you, and roughly what would it cost her?"**
+- **"When you say AI — what would you be teaching her to *do*? Walk me through it."**
+- **"What do you use AI for yourself, day to day?"**
+
+**Listen for:** can she describe a concrete skill, or does it stay abstract? If she can't say what a student would be able to *do* afterwards, that's the biggest gap in the plan — and now you know it before you quote.
+
+### 6. The question that matters most (5 min)
+
+Ask it with genuine curiosity, not as a challenge:
+
+> **"One thing I want to understand — most of your posts are about relationships and marriage, but what you described to me is AI and income. How do those two connect in your head?"**
+
+**This is the whole call.** She'll either explain a link you hadn't seen — in which case you've learned something real — or she'll pause and hear the gap herself. Someone realising it in their own words is worth ten times you pointing it out.
+
+**Do not fill the silence.** Let her think.
+
+### 7. What she wants from you (7 min)
+
+- **"When you say production partner, what do you picture me doing?"**
+- **"What's the bit you most want off your plate?"**
+- **"Have you worked with anyone on content before? How did it go?"**
+- **"How much time can you realistically give this each week?"**
+
+**Listen for:** does she want a camera operator or a partner? Her answer determines what you sell her — and whether this is worth taking on.
+
+### 8. Practical (3 min)
+
+- **"What's the timeline in your head?"**
+- **"Have you thought about budget for this?"**
+
+Ask it plainly. Flinching on money now means flinching later.
+
+### 9. Close (3 min)
+
+> "This was really useful. Give me a few days — I'll put together how I'd approach it, based on what you've just told me rather than what I assumed. Can we speak again **[day]**?"
+
+**Book the second call before hanging up.** That's the only outcome tomorrow needs.
 
 ---
 
-## If no reply after 3 days
+## Three rules for the call
 
-> Hi Juhi, know things get busy. Still keen to show you what I found — happy to keep it to 20 minutes if that's easier.
->
-> One quick question either way: has anyone paid you for AI training yet, or would neXtHer be starting fresh on that side?
-
-*A real question, easy to answer, and it's the single biggest unknown in the whole plan.*
-
-Then leave it. One more nudge after that at most.
-
----
-
-## Running the call — 45 minutes
-
-You said you were stuck on understanding this. Don't wing it. This order does the work for you.
-
-| Min | Do this |
+| Do | Don't |
 | --- | --- |
-| **0–5** | Ask, don't pitch. *"Tell me where neXtHer is right now — what exists, what's still in your head?"* Then listen. You'll learn more here than in all my documents. |
-| **5–10** | **Ask the three questions** below. Everything depends on the answers. |
-| **10–25** | Share the deck. Walk slides 3 → 4 → 5 → 7. Stop there. |
-| **25–35** | Let her react to the diagnosis. **Do not defend it.** If she disagrees, ask why — she knows things you don't. |
-| **35–42** | Only if she's agreed there's a problem: slides 8–11, the plan and the pricing. |
-| **42–45** | Agree a next step and a date. Send the PDF after you hang up. |
+| Let silences sit. She'll fill them with the useful stuff | Jump in to be helpful |
+| Ask "tell me more about that" at least three times | Pitch. Not once. Even if she asks — *"let me answer that properly next time"* |
+| Write down her exact phrases — they become her content voice later | Correct her, or defend your view of her account |
 
-### The three questions that decide everything
+**If she asks about pricing:** *"I'd rather scope it properly after this and come back with real numbers — I don't want to quote you for the wrong thing."* Then move on.
 
-1. **"Is neXtHer replacing the coaching account, or running alongside it?"** — this doubles or halves the work.
-2. **"What's 'Trusted by 100+ women' — paid clients, or free sessions?"** — tells you whether she has proof or just a claim.
-3. **"What do you actually use AI for day to day, and have you ever been paid for it?"** — the whole plan assumes real depth. If it's thin, the plan changes and you need to know before quoting.
+---
 
-### Two things not to do
+## After the call
 
-- **Don't lead with the criticism.** Ask about her vision first. The diagnosis only works after she feels heard.
-- **Don't quote a price if she hasn't accepted the diagnosis.** If she still thinks she just needs a videographer, you'll be compared on day rate and you'll lose. Better to end with *"let me send this over, have a read, let's talk Friday"* than to close badly.
+Update the proposal with what she actually said, then present it on call two. Most of it will hold. What changes is that it'll be built on her words, not my inferences — and you'll be able to explain every slide, because you'll finally understand the business.
 
 ---
 
 ## Timing
 
-Tomorrow is a **Saturday**. Fine to message — she's a solo creator and posts through weekends — but pitch the call slots for early next week rather than the weekend. Send mid-morning, not late night.
+Tomorrow's a **Saturday**. Fine to message — she's a solo creator and posts weekends — but offer slots early next week. Send mid-morning.
