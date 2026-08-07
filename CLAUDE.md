@@ -3,6 +3,22 @@
 Skill toolkit: 99 skills in `.claude/skills/`, published as a plugin marketplace
 (`.claude-plugin/marketplace.json`). Keep this file short — it loads every session.
 
+## Always sync client work to Google Drive
+
+Client/project work lives in `clients/<slug>/` here **and** must be mirrored to
+Drive: `Production-X-OS / 07-Clients / <Client Name>/`
+(folder id `1zyhIczRpcqcadveWeoXTA-Ot7tQRZWnL`).
+
+- Upload at the end of any work session — don't wait to be asked.
+- Include a `Profile.md` per the convention in `07-Clients/README.md`
+  (who they are, contacts, history, next action).
+- Markdown: pass `disableConversionToGoogleType: true` so files stay `.md`
+  instead of becoming Google Docs.
+- Binaries over ~100KB (PDF, PPTX, video) can't be sent through the Drive tool —
+  base64 in a tool call is impractical. Say so and flag them for manual upload.
+- Pre-sale work belongs in `04-Sales` by their README; if it lands in
+  `07-Clients`, note it in the Profile so the client list stays honest.
+
 ## Pick the profile, not everything
 
 Installing `one-man-army` costs ~13,500 tokens of skill descriptions every
