@@ -4,6 +4,8 @@
 **Status:** Draft for discussion
 **Client ask on the table:** a digital production partner to film, edit, publish and grow content while the brand is built.
 
+> ⚠️ **Read `reference-accounts-addendum.md` alongside this.** After the client shared her reference accounts (`@melrobbins`, `@upgradingkatie`), two recommendations here changed — **§9 (production values)** and **§3–4 (discarding the relationship niche)**. The addendum wins where they disagree. The addendum also adds the missing piece: a narrative spine.
+
 ---
 
 ## 0. What I worked from
