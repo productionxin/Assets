@@ -168,7 +168,7 @@ function footnote(s, text, onDark) {
   title(s, "Your reference account proves the thesis works");
 
   s.addShape(pres.ShapeType.roundRect, {
-    x: M, y: 2.3, w: 4.5, h: 3.5, fill: { color: PLUM }, rectRadius: 0.14,
+    x: M, y: 2.3, w: 4.5, h: 3.1, fill: { color: PLUM }, rectRadius: 0.14,
   });
   s.addText("415,000", {
     x: M + 0.35, y: 2.75, w: 3.8, h: 1.0, margin: 0,
@@ -203,7 +203,7 @@ function footnote(s, text, onDark) {
       x: 6.3, y: y + 0.34, w: 6.3, h: 0.7, margin: 0,
       fontFace: BFONT, fontSize: 14, color: MUTED, lineSpacing: 20,
     });
-    y += 1.2;
+    y += 1.42;
   });
   footnote(s, "Follower figure read from the profile you shared. Instagram blocks automated access, so treat it as a snapshot.", false);
 }
@@ -289,11 +289,11 @@ function footnote(s, text, onDark) {
   eyebrow(s, "Finding 05", true);
 
   s.addText("34", {
-    x: M, y: 1.6, w: 4.0, h: 1.7, margin: 0,
-    fontFace: HFONT, fontSize: 96, bold: true, color: GOLD,
+    x: M, y: 1.65, w: 4.0, h: 1.3, margin: 0,
+    fontFace: HFONT, fontSize: 105, bold: true, color: GOLD,
   });
   s.addText("posts published", {
-    x: M, y: 3.25, w: 5.0, h: 0.4, margin: 0,
+    x: M, y: 3.0, w: 5.0, h: 0.4, margin: 0,
     fontFace: BFONT, fontSize: 18, color: MUTEDD,
   });
   s.addText("Zero of them have you speaking on camera.", {
@@ -343,7 +343,7 @@ function footnote(s, text, onDark) {
   eyebrow(s, "Phase 0 · 2 weeks", false);
   title(s, "Strategy Sprint", false, { w: 7.5 });
 
-  s.addShape(pres.ShapeType.roundRect, { x: 9.3, y: 0.8, w: 3.3, h: 1.5, fill: { color: BERRY }, rectRadius: 0.14 });
+  s.addShape(pres.ShapeType.roundRect, { x: 9.3, y: 0.8, w: 3.3, h: 1.2, fill: { color: BERRY }, rectRadius: 0.14 });
   s.addText("₹45,000", {
     x: 9.3, y: 0.95, w: 3.3, h: 0.7, margin: 0,
     fontFace: HFONT, fontSize: 32, bold: true, color: GOLD, align: "center",
@@ -413,7 +413,7 @@ function footnote(s, text, onDark) {
 
   opts.forEach((o, i) => {
     const x = M + i * 4.1;
-    const y = 2.35, h = 4.0;
+    const y = 2.35, h = 3.45;
     s.addShape(pres.ShapeType.roundRect, { x: x, y: y, w: 3.7, h: h, fill: { color: o.fill }, rectRadius: 0.14 });
     if (o.tag) {
       s.addShape(pres.ShapeType.roundRect, { x: x, y: y - 0.42, w: 3.7, h: 0.38, fill: { color: GOLD }, rectRadius: 0.08 });
@@ -633,7 +633,7 @@ function footnote(s, text, onDark) {
 /* ==================== 16. CLOSE (dark) =========================== */
 {
   const s = darkSlide();
-  s.addShape(pres.ShapeType.ellipse, { x: -1.7, y: 4.6, w: 4.6, h: 4.6, fill: { color: BERRY } });
+  s.addShape(pres.ShapeType.ellipse, { x: -2.9, y: 6.2, w: 4.0, h: 4.0, fill: { color: BERRY } });
   s.addShape(pres.ShapeType.ellipse, { x: 11.0, y: -1.3, w: 4.0, h: 4.0, fill: { color: ROSE }, transparency: 60 });
 
   eyebrow(s, "Recommended start", true);
@@ -653,7 +653,7 @@ function footnote(s, text, onDark) {
     y += 0.62;
   });
 
-  s.addShape(pres.ShapeType.roundRect, { x: 9.1, y: 2.05, w: 3.5, h: 2.5, fill: { color: BERRY }, rectRadius: 0.14 });
+  s.addShape(pres.ShapeType.roundRect, { x: 9.1, y: 2.05, w: 3.5, h: 1.95, fill: { color: BERRY }, rectRadius: 0.14 });
   s.addText("₹90,000", {
     x: 9.1, y: 2.45, w: 3.5, h: 0.75, margin: 0,
     fontFace: HFONT, fontSize: 34, bold: true, color: GOLD, align: "center",
