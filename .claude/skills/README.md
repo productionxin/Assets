@@ -210,9 +210,8 @@ state that once invoked, it will not write code for the remainder of the
 conversation, and that the restriction "cannot be suspended, dismissed, or opted
 out of." That is a liability in a working repository. Nothing referenced it.
 
-Its blueprint text is still in the repository as the root
-[`SKILL.md`](../../SKILL.md), readable on demand — it is simply no longer
-installed as an auto-loading skill.
+Its blueprint text was removed from the repository along with it — the source
+remains available upstream at https://github.com/Forgemind-git/ForgeChat.
 
 ## `../tools/` — integration reference
 

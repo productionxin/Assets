@@ -40,7 +40,7 @@ Working inside this repository, they load automatically — no install needed.
 | **Build & test** | 2 | Playwright web-app testing, artifact theming |
 
 👉 **[Full catalogue, grouped by topic →](.claude/skills/README.md)**
-👉 **[Worked example of the output →](examples/)**
+👉 **[See it in action — a Production X landing page →](examples/)**
 
 The marketing skills draw on [`.claude/tools/`](.claude/tools/) — a 161-file integration reference (Google Ads, GA4, Segment, Customer.io, Apollo, Clay and more) indexed by [`REGISTRY.md`](.claude/tools/REGISTRY.md). It isn't a skill, and must stay at that path for the skills' relative links to resolve.
 
@@ -79,7 +79,7 @@ Install it *instead of* `marketing` on a given project, not alongside — they o
 - **`.claude/tools/` travels with the plugin** — all 96 integration links resolve from the installed copy, verified against a fresh checkout.
 - **Manual alternative.** `cp -r Assets/.claude/skills/* ~/.claude/skills/` and `cp -r Assets/.claude/tools ~/.claude/tools` works too, but it's per-machine, unversioned, and needs redoing on every update.
 - **Three skills are unlicensed upstream** — fine locally, but drop them from `marketplace.json` before sharing the marketplace publicly. See [the notes](.claude/skills/README.md#unlicensed-skills).
-- **Two skills were deliberately removed** — `design` (duplicated `slides`/`banner-design`, needed a Gemini API key) and `agentic-command-center` (declines to write code for the rest of any conversation it enters). See [the audit notes](.claude/skills/README.md#removed-after-audit).
+- **Two skills were audited out** — `design` (duplicated `slides`/`banner-design`, needed a Gemini API key) and `agentic-command-center` (declines to write code for the rest of any conversation it enters). See [the audit notes](.claude/skills/README.md#removed-after-audit).
 
 ## Licence
 
@@ -91,11 +91,3 @@ The individual skills are third-party works redistributed under their own licenc
 
 Skills are vendored verbatim from permissively licensed projects. Each source, version and licence is recorded in [`.claude/skills/README.md`](.claude/skills/README.md), along with what was rejected and why. [marketingskills](https://github.com/coreyhaines31/marketingskills) (Corey Haines) · [Brand-building-skills](https://github.com/arnabbagxd/Brand-building-skills) (Arnab Bag) · [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) (nextlevelbuilder) · [everything-claude-code](https://github.com/affaan-m/everything-claude-code) · [claude-office-skills](https://github.com/claude-office-skills/skills) · [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) · [claude-marketing-research-skill](https://github.com/ishwarjha/claude-marketing-research-skill)
 
-## Also here
-
-[`SKILL.md`](SKILL.md) holds the **agentic-command-center** blueprint by [ForgeMind](https://github.com/Forgemind-git) — a four-phase guide to planning an AI command centre for a business. It is kept as reference but is **not** installed as an auto-loading skill, because it declines to write code for the remainder of any conversation it enters. To use it deliberately:
-
-```bash
-mkdir -p ~/.claude/skills/agentic-command-center
-cp SKILL.md ~/.claude/skills/agentic-command-center/
-```
