@@ -16,6 +16,9 @@ Drive: `Production-X-OS / 07-Clients / <Client Name>/`
   instead of becoming Google Docs.
 - Binaries over ~100KB (PDF, PPTX, video) can't be sent through the Drive tool —
   base64 in a tool call is impractical. Say so and flag them for manual upload.
+- The Drive connector can only **create**, never update or delete. Re-uploading a
+  changed file makes a same-named duplicate — so upload once per file per session,
+  at the end, and tell the user which older copy to delete.
 - Pre-sale work belongs in `04-Sales` by their README; if it lands in
   `07-Clients`, note it in the Profile so the client list stays honest.
 
