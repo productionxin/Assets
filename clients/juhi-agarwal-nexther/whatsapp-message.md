@@ -67,6 +67,14 @@ After this, leave it. One more nudge later at most.
 
 ### Her story (8 min)
 
+**Open with her own Story. Best possible start:**
+
+> **"I saw your story — 'building something crazy for all my girlies.' Tell me about that."**
+
+Specific, warm, proves you were paying attention, and takes her straight to the thing she is most excited about.
+
+Then:
+
 > **"Tell me about neXtHer. How did you start thinking about it?"**
 
 Then keep quiet. Let her talk. Only push with:
@@ -97,6 +105,20 @@ Then keep quiet. Let her talk. Only push with:
 - **"What do you use AI for in your own work daily?"**
 
 **Notice:** can she tell you what a student will be able to *do* after? If she cannot, that is the biggest gap in the whole plan. Better you find out now than after quoting.
+
+### Her own words — the easiest win on the call (3 min)
+
+Read her Threads line back to her:
+
+> **"On Threads you described yourself as a coach who helps women get hotter, richer, more energized and more loved. Honestly I thought that was much sharper than your Instagram bio. Is that how you think about it?"**
+
+This is a compliment that happens to be the whole strategy. She wrote it herself. Most likely she agrees straight away — and then rewriting the bio becomes **her idea, not your correction.**
+
+Also ask, lightly, not as a gotcha:
+
+> **"I saw you were starting a book club also. How does that fit with everything else?"**
+
+Her answer tells you whether she finishes things or starts things. That is the most important thing you need to know about working with her.
 
 ### The main question (5 min)
 
