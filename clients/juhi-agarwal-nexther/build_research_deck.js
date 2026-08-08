@@ -303,7 +303,7 @@ const bl=(s,items,o)=>s.addText(items.map((t,i)=>({text:t,options:{bullet:true,b
   note(s,6.05,"Right now that machine doesn't exist. There's no free thing, no list, no first step — so even the people who love your posts have nowhere to go.");}
 
 /* 19 WHAT SHE SELLS */{const s=light(); eyebrow(s,"The offer"); title(s,"What you'd actually sell");
-  s.addText("Four steps, each one a bigger commitment than the last. You don't build them all at once — you build them in this order.",
+  s.addText("You may already have this planned — if so, tell me and I'll build around it. This is simply how I'd think about it.",
     {x:M,y:1.9,w:W,h:0.35,margin:0,fontFace:BF,fontSize:16,color:MUTED});
   const tiers=[["Free","a prompt pack she can use tonight","to get her WhatsApp number. Nothing else.",TINT,INK,BERRY,MUTED],
     ["One evening","a live workshop, 90 minutes","the first time she pays you. Small enough to say yes to, real enough to prove she's serious.",TINT,INK,BERRY,MUTED],
