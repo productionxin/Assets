@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="380" viewBox="0 0 1600 380">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#E3C77B"/><stop offset="1" stop-color="#C9962F"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(40,40)">
+    <!-- chevron (left half of the X) -->
+    <path d="M2,6 L74,6 L176,152 L74,298 L2,298 L104,152 Z" fill="#141414"/>
+    <!-- upper gold wedge -->
+    <path d="M130,6 L320,6 L206,158 Z" fill="url(#g)"/>
+    <!-- lower gold wedge -->
+    <path d="M206,158 L286,298 L140,298 Z" fill="url(#g)"/>
+  </g>
+  <g>
+    <text x="470" y="176" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-size="98" letter-spacing="17" fill="#2B1620" font-weight="300">PRODUCTION X</text>
+    <rect x="474" y="218" width="1040" height="3" fill="#C9962F"/>
+    <text x="478" y="318" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-size="62" letter-spacing="21" fill="#B98A2C" font-weight="300">CREATIVE STUDIO</text>
+  </g>
+</svg>
