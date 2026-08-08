@@ -283,6 +283,61 @@ const bl=(s,items,o)=>s.addText(items.map((t,i)=>({text:t,options:{bullet:true,b
     {x:M+0.5,y:5.35,w:W-1.0,h:1.1,margin:0,fontFace:BF,fontSize:17.5,color:WHITE,valign:"middle",lineSpacing:25});
   foot(s,"Platform figures: YouTube India monthly users and age skew, 2026 industry reporting.");}
 
+/* 18 HOW THE MONEY WORKS */{const s=light(); eyebrow(s,"The part everything else exists for");
+  title(s,"How this actually turns into money");
+  s.addText("Nobody buys from a stranger. This is the path from someone who scrolls past you to someone who pays you.",
+    {x:M,y:1.9,w:W,h:0.35,margin:0,fontFace:BF,fontSize:16,color:MUTED});
+  const path=[["1","She sees a reel","You show a result. You hold back the method.",TINT,INK,BERRY,WHITE],
+    ["2","She asks for it","A comment or a DM. This is the moment we design for.",TINT,INK,BERRY,WHITE],
+    ["3","She joins your WhatsApp","Now she's yours, not Instagram's.",BERRY,WHITE,GOLD,PLUM],
+    ["4","She hears from you weekly","Useful things. Not selling. Trust is built here.",TINT,INK,BERRY,WHITE],
+    ["5","She buys","Something small first. Then the real thing.",PLUM,WHITE,GOLD,PLUM]];
+  path.forEach((c,i)=>{const x=M+i*2.38; card(s,x,2.4,2.24,1.78,c[3]);
+    badge(s,x+0.24,2.6,c[0],c[5],c[6],0.36);
+    s.addText(c[1],{x:x+0.24,y:3.06,w:1.85,h:0.42,margin:0,fontFace:BF,fontSize:14,bold:true,color:c[4],lineSpacing:18});
+    s.addText(c[2],{x:x+0.24,y:3.48,w:1.9,h:0.62,margin:0,fontFace:BF,fontSize:11,
+      color:c[3]===TINT?MUTED:MUTEDD,lineSpacing:14});});
+  card(s,M,4.55,W,1.18,BERRY);
+  s.addText("We're not bringing you clients from outside. We're building the machine that turns the women already watching you into women who pay you.",
+    {x:M+0.5,y:4.55,w:W-1.0,h:1.18,margin:0,fontFace:BF,fontSize:18,color:WHITE,valign:"middle",lineSpacing:25});
+  note(s,6.05,"Right now that machine doesn't exist. There's no free thing, no list, no first step — so even the people who love your posts have nowhere to go.");}
+
+/* 19 WHAT SHE SELLS */{const s=light(); eyebrow(s,"The offer"); title(s,"What you'd actually sell");
+  s.addText("Four steps, each one a bigger commitment than the last. You don't build them all at once — you build them in this order.",
+    {x:M,y:1.9,w:W,h:0.35,margin:0,fontFace:BF,fontSize:16,color:MUTED});
+  const tiers=[["Free","a prompt pack she can use tonight","to get her WhatsApp number. Nothing else.",TINT,INK,BERRY,MUTED],
+    ["One evening","a live workshop, 90 minutes","the first time she pays you. Small enough to say yes to, real enough to prove she's serious.",TINT,INK,BERRY,MUTED],
+    ["Six weeks","a group programme with live calls","your real income. Taught once, to a room — so it doesn't eat your calendar the way 1:1 does.",BERRY,WHITE,GOLD,MUTEDD],
+    ["Every month","a membership, billed monthly","money that arrives without a launch. The most valuable thing you can build.",PLUM,WHITE,GOLD,MUTEDD]];
+  let y=2.45;
+  tiers.forEach(t=>{s.addShape(pres.ShapeType.roundRect,{x:M,y,w:W,h:0.92,fill:{color:t[3]},rectRadius:0.1});
+    s.addText(t[0],{x:M+0.32,y:y+0.16,w:2.3,h:0.3,margin:0,fontFace:BF,fontSize:15,bold:true,color:t[5]});
+    s.addText(t[1],{x:M+0.32,y:y+0.46,w:2.45,h:0.42,margin:0,fontFace:BF,fontSize:11.5,color:t[6],lineSpacing:14});
+    s.addText([{text:"Its job: ",options:{bold:true}},{text:t[2],options:{}}],
+      {x:M+3.0,y,w:W-3.35,h:0.92,margin:0,fontFace:BF,fontSize:15,color:t[4],valign:"middle",lineSpacing:20});
+    y+=1.03;});
+  s.addText([{text:"And here's the neat part: the monthly challenge we'd film anyway ",options:{}},
+    {text:"is",options:{italic:true}},{text:" the membership. Same work, twice the use.",options:{}}],
+    {x:M,y:6.65,w:11.6,h:0.5,margin:0,fontFace:BF,fontSize:16.5,bold:true,color:BERRY});}
+
+/* 20 WHATSAPP */{const s=light(); eyebrow(s,"The engine room"); title(s,"Why WhatsApp, and how we'd run it");
+  [["535M","Indians on WhatsApp. Your audience is already there, every day.",PLUM],
+   ["90%+","read rate on a properly opted-in list. Email sits around 20–25%.",PLUM],
+   ["~45%","reply rate, against about 6% on email. People actually answer.",PLUM],
+   ["Yours","If Instagram changes tomorrow, this list still exists.",BERRY]]
+  .forEach((v,i)=>{const x=M+i*2.97; card(s,x,1.95,2.77,1.5,v[2]);
+    s.addText(v[0],{x:x+0.28,y:2.14,w:2.3,h:0.52,margin:0,fontFace:HF,fontSize:29,bold:true,color:GOLD});
+    s.addText(v[1],{x:x+0.28,y:2.68,w:2.3,h:0.68,margin:0,fontFace:BF,fontSize:11.5,color:MUTEDD,lineSpacing:15});});
+  const how=[["GETTING THEM ON","A keyword in the reel — \"comment PROMPT\" — triggers an automatic reply that asks for her number. We set it up and maintain it.",TINT,INK,BERRY],
+    ["KEEPING THEM WARM","One genuinely useful message a week. Written by us, in your voice, approved by you. No selling.",TINT,INK,BERRY],
+    ["WHEN YOU LAUNCH","A short sequence over five or six days before a workshop or intake opens. This is where the sales actually happen.",BERRY,WHITE,GOLD]];
+  let y=3.75;
+  how.forEach(r=>{s.addShape(pres.ShapeType.roundRect,{x:M,y,w:W,h:0.78,fill:{color:r[2]},rectRadius:0.1});
+    s.addText(r[0],{x:M+0.32,y,w:2.4,h:0.78,margin:0,fontFace:BF,fontSize:13,bold:true,color:r[4],valign:"middle"});
+    s.addText(r[1],{x:M+2.95,y,w:W-3.3,h:0.78,margin:0,fontFace:BF,fontSize:14.5,color:r[3],valign:"middle",lineSpacing:20});
+    y+=0.89;});
+  foot(s,"WhatsApp benchmarks: India marketing reporting, 2026. Figures are for opted-in lists, not bought contacts — we would never buy contacts.");}
+
 /* 18 TWO WAYS */{const s=light(); eyebrow(s,"Two ways we can work"); title(s,"Both are real. They do different jobs.");
   card(s,M,1.95,5.75,3.9,TINT);
   s.addText("OPTION 1",{x:M+0.38,y:2.18,w:5.0,h:0.28,margin:0,fontFace:BF,fontSize:12.5,bold:true,charSpacing:1.6,color:MUTED});
